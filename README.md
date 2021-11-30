@@ -1,2 +1,4 @@
 # kukbo-fe
-kukbo front end project
+kukbo renewal project
+  front end part
+
