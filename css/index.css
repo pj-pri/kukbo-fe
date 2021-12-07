@@ -77,7 +77,8 @@ section {
 .page-navi-bar {
 	position: absolute;
 	left: 50%;
-	bottom: 30%;
+	top: 80%;
+	top: calc(50% + 200px);
 	transform: translateX(-50%);
 	width: 100%;
 	max-width: 1140px;
