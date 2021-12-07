@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.pc-view,
+.laptop-view,
+.tablet-view,
+.mobile-view {
+	display: none;
+}
+
+@media all and (min-width: 1440px) {
+	.pc-view {
+		display: block;
+	}
+}
+/* Laptop small S */
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+	.laptop-view {
+		display: block;
+	}
+}
+/* Laptop E */
+
+/* Tablet and Mobile S */
+@media all and (max-width: 1023px) {
+}
+/* Tablet and Mobile E */
+
+/* Tablet S */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+	.tablet-view {
+		display: block;
+	}
+}
+/* Tablet E */
+
+/* Mobile S */
+@media all and (max-width: 767px) {
+	.mobile-view {
+		display: none;
+	}
+}
+/* Mobile E */

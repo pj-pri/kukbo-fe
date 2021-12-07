@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #777;
+}
+img {
+	vertical-align: top;
+}
+button {
+	border: 0px none;
+	padding: 0px;
+	background-color: transparent;
+}
+
+:lang(ko) {
+}
+:lang() {
+}
+:lang(zh-CN) {
+}
+:lang(en) {
+}
+
+:root {
+	/* color S */
+
+	--blue_ip: #0047bb;
+	--blue_dark: #002f7c;
+	--darkness: #010440;
+	--white: #fff;
+	--black: #000;
+	--dark: #1e1e1e;
+	--gray: #88929e;
+	--gray_dark: #4b4b57;
+	--gray_medium: #bdc5ca;
+	--gray_light: #dcdee7;
+	--gray_shine: #fafafc;
+
+	/* color E */
+
+	/* pc S */
+	--font_size_pc_h2: 36px;
+	--font_size_pc_h3: 28px;
+	--font_size_pc_h4: 28px;
+	--font_size_pc_h5: 24px;
+	--font_size_pc_h6: 16px;
+	--font_size_pc_body1: 16px;
+	--font_size_pc_body2: 14px;
+
+	--line_height_pc_h2: 54px;
+	--line_height_pc_h3: 42px;
+	--line_height_pc_h4: 42px;
+	--line_height_pc_h5: 36px;
+	--line_height_pc_h6: 24px;
+	--line_height_pc_body1: 24px;
+	--line_height_pc_body2: 23px;
+
+	--letter_spacing_pc_h2: 0.5px;
+	--letter_spacing_pc_h3: 0.2px;
+	--letter_spacing_pc_h4: 0.5px;
+	--letter_spacing_pc_h5: 0.5px;
+	--letter_spacing_pc_h6: 0.5px;
+	--letter_spacing_pc_body1: 0.2px;
+	--letter_spacing_pc_body2: 0.2px;
+	/* pc E */
+
+	/* mobile, tablet S */
+	--font_size_mt_h2: 24px;
+	--font_size_mt_h3: 18px;
+	--font_size_mt_h4: 18px;
+	--font_size_mt_h5: 16px;
+	--font_size_mt_h6: 14px;
+	--font_size_mt_body1: 14px;
+	--font_size_mt_body2: 12px;
+
+	--line_height_mt_h2: 36px;
+	--line_height_mt_h3: 28px;
+	--line_height_mt_h4: 28px;
+	--line_height_mt_h5: 24px;
+	--line_height_mt_h6: 23px;
+	--line_height_mt_body1: 23px;
+	--line_height_mt_body2: 19px;
+
+	--letter_spacing_mt_h2: 0.5px;
+	--letter_spacing_mt_h3: 0.2px;
+	--letter_spacing_mt_h4: 0.5px;
+	--letter_spacing_mt_h5: 0.5px;
+	--letter_spacing_mt_h6: 0.5px;
+	--letter_spacing_mt_body1: 0.2px;
+	--letter_spacing_mt_body2: 0.2px;
+	/* mobile, tablet E */
+
+	/* font E */
+
+	/* white_space S */
+	--white_space_pc1: 24px;
+	--white_space_pc2: 48px;
+
+	--white_space_mt1: 20px;
+	--white_space_mt2: 40px;
+	/* white_space E */
+}
+
+/* 감추고 싶은 글자에 사용하는 css S */
+.blind {
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+}
+/* 감추고 싶은 글자에 사용하는 css E */
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0px auto;
+}

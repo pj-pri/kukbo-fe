@@ -4,9 +4,323 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- <link rel="stylesheet" href="/css/index_res.css"> -->
     <title>국보</title>
-</head>
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/lib/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- slide styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 9.58%, rgba(0, 0, 0, 0.273) 100%);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide__bg-image
+      {
+        position:absolute;
+        /* min-width: 100%;
+        height: 100%; */
+        z-index: -1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+ </head>
 <body>
-    <h1>안녕하세요 국보 홈페이지에 오신 것을 환영합니다.</h1>
+    <h1 class="blind">안녕하세요 국보 홈페이지에 오신 것을 환영합니다.</h1>
+    <div class="wrap">
+        <header></header>
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__bg-image" src="/images/index/banner_slide_01.jpg" alt="">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>물류</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                        <button class="swiper-slide__button-down">Scroll Down</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 2</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 3</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 4</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-navi-bar">
+                    <div id="slidePageCount" class="page-count">
+                        1 / 1
+                    </div>
+                    <div class="slide-progress-bar">
+                        <div id="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="features">
+            <h2 class="blind">Service feature</h2>
+            <div class="features__images">
+                <div class="features__image-wrap">
+                    <img class="features__image features__image--view" src="/images/index/feature_01.jpg" alt="">
+                </div>
+                <!-- <div class="features__image">
+                    <img src="/images/index/feature_02.jpg" alt="">
+                </div>
+                <div class="features__image">
+                    <img src="/images/index/feature_03.jpg" alt="">
+                </div>
+                <div class="features__image">
+                    <img src="/images/index/feature_04.jpg" alt="">
+                </div>
+                <div class="features__image">
+                    <img src="/images/index/feature_05.jpg" alt="">
+                </div> -->
+
+            </div>
+            <div class="features__contents">
+                <ul>
+                    <li>
+                        <div class="feature-content">
+                            <h3 class="feature-content__title">대고객 서비스 만족</h3>
+                            <p class="feature-content__description">고객의 요구에 접근하여 귀 기울이며 비용과 효과 간의 현실적인 관계를 고려하여 고객에게 충분히 이해토록 하며 최신의 물류 시스템으로 각 물류 활동에 대한 고객의 평가를 측정, 평가, 현장에 반영</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-content">
+                            <h3 class="feature-content__title">최적의 물류프로세스 구축</h3>
+                            <p class="feature-content__description">고객만족과 부가가치 물류의 목적을 위해 수배송, 보관, 하역, 포장, 수출입 서비스 등 원활한 물류관리를 위해 각 물류프로세스를 완비하여 최적의 물류 시스템 구축</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-content">
+                            <h3 class="feature-content__title">녹색 및 품질경영</h3>
+                            <p class="feature-content__description">ISO 9001, 14001 인증을 통해 물류시스템의 개선 활동과 내외부적으로 발생할수있는 모든 비환경적 요소를 차단해 친환경 물류서비스의 품질 향상</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-content">
+                            <h3 class="feature-content__title">전략적 물류시스템 구축</h3>
+                            <p class="feature-content__description">변화에 능동적이고 통합화된 조직 대응력을 키우며 내/외부적 성과측정을 통하여 피드백과 대응 메커니즘 창출</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-content">
+                            <h3 class="feature-content__title">창의적 사고와 지식경영</h3>
+                            <p class="feature-content__description">상황을 파악하고 현상을 직시하여 개선요인을 탐구 및 새로운 문제해결 능력을 창출하며 적극적인 사고와 참여하는 열린경영으로 전사적인 지식공유를 통해 신기술 & 신지식 창출</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="feature-content__cover"></div>
+            </div>
+        </section>
+
+        <section class="business">
+            <div class="container business__txt">
+                <h2 class="business__title">Our Business</h2>
+                <p class="business__description">물류와 신규사업의 조화로 최고의 성과를 이루어 냅니다.</p>
+            </div>
+            <div class="container business-contents">
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">국제 물류</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">국제 물류</span>
+                        <span class="business-item__content">국보는 67년 동안 물류의 핵심 부분인 <br>운송분야를 담당해 오면서 획득한 <br>노하우와 첨단 IT솔루션을 통해 고객...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">컨테이너 & 화물 운송</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">컨테이너 & 화물 운송</span>
+                        <span class="business-item__content">공유 모빌리티 경제 스타트업으로 <br>국내 경제 규제 환경 속에서 합법적인 <br>라이드 쉐어링을 제공하고 있습니다.</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">창고 및 보관</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">창고 및 보관</span>
+                        <span class="business-item__content">주요 항만 및 내륙 거점마다 CY와 CFS를 <br>운영하여 수출입 화물의 혼재에서부터 <br>보관, 검수, 통관에 이르기까지...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">터미널 & 하역</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">터미널 & 하역</span>
+                        <span class="business-item__content">부산항 연안여객터미널에서 제주까지 <br>여객선을 이용하여 매주 3회 (월, 수, <br>금) 출항하고 있으며 차량, 컨테이너...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">바이오</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">바이오</span>
+                        <span class="business-item__content">바이오 혁신 기술에 집중하여 글로벌 <br>바이오 기업으로 도약하겠습니다. </span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">골프웨어</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">골프웨어</span>
+                        <span class="business-item__content">독일 프리미엄 스포츠 패션 브랜드인 <br>BOGNER와 유니크한 스포츠패션 <br>헤리티지를 토대로 컨템포러리...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">모빌리티 플랫폼</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">모빌리티 플랫폼</span>
+                        <span class="business-item__content">공유 모빌리티 경제 스타트업으로 <br>국내 경제 규제 환경 속에서 합법적인 <br>라이드 쉐어링을 제공하고 있습니다.</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">KF 방역마스크 사업</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">KF 방역마스크 사업</span>
+                        <span class="business-item__content">국보는 이지엔코리아(주)와 업무 제휴를<br> 통해 의약외품 마스크인 KF-94, <br>덴탈마스크 등 모든 영역의...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+                <div class="business-contents__item">
+                    <h3 class="business-contents__title">2H TOWN</h3>
+                    <a href="" class="business-contents__item--hover business-item">
+                        <span class="business-item__title">2H TOWN</span>
+                        <span class="business-item__content">그리스 선박왕 Onassis가 천혜의 자연환경에 <br>심취해 수중도시 건설까지 계획했던 <br>세계적 수상레저 명소...</span>
+                        <span class="business-item__button">View more</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="vision">
+            <div class="container vision__wrap">
+                <div class="vision__txt">
+                    <h2 class="vision__title">Our Vision</h2>
+                    <h3 class="vision__description">모든 임직원과 고객의 중심은 화합입니다.</h3>
+                </div>
+                <div class="vision__content">
+                    <ul class="vision-contents">
+                        <li class="">
+                            <div class="vision-contents__txt vision-contents__txt--first">
+                                <h3 class="vision-contents__title">새로운 발상</h3>
+                                <p class="vision-contents__sub-title">Creativity</p>
+                                <p class="vision-contents__description">지속적인 개선을 위하여 열린 <br>생각으로 새로운 발상을 시도합니다.</p>
+                            </div>
+                            <!-- <div class="vision-contents__image vision-contents__image--first"></div> -->
+                            <img class="vision-contents__image vision-contents__image--first" src="/images/index/vision_01.jpg" alt=""/>
+                        </li>
+                        <li>
+                            <!-- <div class="vision-contents__image vision-contents__image--second"></div> -->
+                            <img class="vision-contents__image vision-contents__image--second" src="/images/index/vision_02.jpg" alt=""/>
+                            <div class="vision-contents__txt vision-contents__txt--second">
+                                <h3 class="vision-contents__title">진취적인 행동</h3>
+                                <p class="vision-contents__sub-title">Progressiveness</p>
+                                <p>의욕적이고, 최고를 지향하며, 적극적인 사고와 <br>진취적인 행동으로 맡은 업무를 완수합니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vision-contents__txt vision-contents__txt--third">
+                                <h3 class="vision-contents__title">고객과의 조화</h3>
+                                <p class="vision-contents__sub-title">Harmony With Customers</p>
+                                <p class="vision-contents__description">서로를 존중하고, 부서간, 노사간의 이해를 넘어 <br>모든 고객과의 조화를 추구합니다.</p>
+                            </div>
+                            <img class="vision-contents__image vision-contents__image--third" src="/images/index/vision_03.jpg" alt=""/>
+                            <!-- <div class="vision-contents__image vision-contents__image--third"></div> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="network">
+            <div class="network__content">
+                <h2 class="network__main-title">Network</h2>
+                <h3 class="network__sub-title">자사별 분포 & 국제물류</h3>
+                <p class="network__description">국내외 파트너와 원활한 협업을 기대합니다.</p>
+            </div>
+            <div class="container network-map">
+                <img src="/images/index/network_map.png" alt="" class="network-map__bg-map">
+                <img src="/images/index/network_line.png" alt="" class="network-map__line">
+                <ul class="network-map__points">
+                    <li><a href="" class="network-map__point network-map__base gyeongin">경인지역</a></li>
+                    <li><a href="" class="network-map__point network-map__base central">중부지역</a></li>
+                    <li><a href="" class="network-map__point network-map__base southern">남부지역</a></li>
+                    <li><a href="" class="network-map__point network-map__port busan">Busan Port</a></li>
+                    <li><a href="" class="network-map__point network-map__port--reverse fukuoka">Fukuoka AirPort</a></li>
+                    <li><a href="" class="network-map__point network-map__port--reverse hakata">Hakata Port</a></li>
+                    <li><a href="" class="network-map__point network-map__arrive hiroshima">Hiroshima</a></li>
+                    <li><a href="" class="network-map__point network-map__arrive oita">OITA</a></li>
+                    <li><a href="" class="network-map__point network-map__arrive osaka">OSAKA</a></li>
+                    <li><a href="" class="network-map__point network-map__arrive tokyo">TOKYO</a></li>
+                </ul>
+
+            </div>
+        </section>
+
+        <footer></footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script  src="/lib/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="/js/index.js"></script>
+
 </body>
 </html>
