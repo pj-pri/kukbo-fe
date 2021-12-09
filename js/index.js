@@ -61,27 +61,40 @@ var feature = {
 		}
 	},
 };
-feature.init();
-window.onscroll = () => {
-	feature.scrollTarget();
-};
+
 // feature fixed js E
 
-// const absolutePosition = {
-// 	setTarget(target) {
-// 		this._target = target;
-// 	},
-// 	top: function () {
-// 		const clientRect = this._target.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
-// 		const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
-// 		const scrolledTopLength = window.pageYOffset; // 스크롤된 길이
-// 		// const absoluteTop = scrolledTopLength + relativeTop; // 절대좌표
-// 		return scrolledTopLength + relativeTop;
-// 	},
-// 	bottom: function () {
-// 		return this.top + this._target.innerHeight;
-// 	},
-// };
+// vision fixed js S
+var vision = {
+	txtWrap: document.querySelector('.vision__txt'),
+	txtContent: document.querySelector('.vision__txt-wrap'),
+	init: function () {},
+	scrollTarget: function () {
+		const startTop = findAbsoluteTop(this.txtWrap);
+		const endBottom =
+			startTop +
+			this.txtWrap.clientHeight -
+			(this.txtContent.clientHeight + 100);
+		let windowPoint = window.scrollY;
+
+		if (startTop <= windowPoint && endBottom <= windowPoint) {
+			this.txtContent.className =
+				'vision__txt-wrap vision__txt-wrap--after';
+		} else if (startTop - 100 <= windowPoint) {
+			this.txtContent.className =
+				'vision__txt-wrap vision__txt-wrap--active';
+		} else {
+			this.txtContent.className = 'vision__txt-wrap';
+		}
+	},
+};
+// vision fixed js S
+
+// scroll
+window.onscroll = () => {
+	feature.scrollTarget();
+	vision.scrollTarget();
+};
 
 function findAbsoluteTop(target) {
 	const clientRect = target.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)

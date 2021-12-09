@@ -13,6 +13,8 @@
       type="text/css"
       href="./lib/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!-- slide styles -->
     <style>
@@ -58,9 +60,38 @@
     </style>
  </head>
 <body>
-    <h1 class="blind">안녕하세요 국보 홈페이지에 오신 것을 환영합니다.</h1>
+     <h1 class="blind">안녕하세요 국보 홈페이지에 오신 것을 환영합니다.</h1>
     <div class="wrap">
+
+        <!-- header S -->
         <header></header>
+        <script>
+            window.onload = fetch('./header.html')
+            .then((response)=>response.text())
+            .then(function(HTML){
+                const header = document.querySelector('header');
+                header.innerHTML = HTML;
+
+                (function(){
+                    // load시 실행
+                    if(window.scrollY > 30){
+                        header.className += header.className.indexOf('scrolled') === -1?' scrolled':'';
+                    }
+                    // scroll시 실행
+                    window.addEventListener('scroll', function(){
+                        if(window.scrollY > 30){
+                            header.className += header.className.indexOf('scrolled') === -1?' scrolled':'';
+                        }else {
+                            header.className = header.className.replace('scrolled','').trim();
+                        }
+                    })
+                })();
+            })
+
+            
+        </script>
+        <!-- header E -->
+        
         <div class="banner">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -182,7 +213,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
-                    <h3 class="business-contents__title">컨테이너 & 화물 운송</h3>
+                    <h3 class="business-contents__title">화물 운송</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">컨테이너 & 화물 운송</span>
                         <span class="business-item__content">공유 모빌리티 경제 스타트업으로 <br>국내 경제 규제 환경 속에서 합법적인 <br>라이드 쉐어링을 제공하고 있습니다.</span>
@@ -198,9 +229,9 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
-                    <h3 class="business-contents__title">터미널 & 하역</h3>
+                    <h3 class="business-contents__title">터미널 & 항만</h3>
                     <a href="" class="business-contents__item--hover business-item">
-                        <span class="business-item__title">터미널 & 하역</span>
+                        <span class="business-item__title">터미널 & 항만</span>
                         <span class="business-item__content">부산항 연안여객터미널에서 제주까지 <br>여객선을 이용하여 매주 3회 (월, 수, <br>금) 출항하고 있으며 차량, 컨테이너...</span>
                         <span class="business-item__button">View more</span>
                     </a>
@@ -252,8 +283,10 @@
         <section class="vision">
             <div class="container vision__wrap">
                 <div class="vision__txt">
-                    <h2 class="vision__title">Our Vision</h2>
-                    <h3 class="vision__description">모든 임직원과 고객의 중심은 화합입니다.</h3>
+                    <div class="vision__txt-wrap">
+                        <h2 class="vision__title">Our Vision</h2>
+                        <h3 class="vision__description">모든 임직원과 고객의 중심은 화합입니다.</h3>
+                    </div>
                 </div>
                 <div class="vision__content">
                     <ul class="vision-contents">
@@ -310,11 +343,37 @@
                     <li><a href="" class="network-map__point network-map__arrive osaka">OSAKA</a></li>
                     <li><a href="" class="network-map__point network-map__arrive tokyo">TOKYO</a></li>
                 </ul>
+                <div class="express-table">
+                    <h4>KUKBO Express Service</h4>
+                    <ul>
+                        <li class="express-table__row">
+                            <p><span>운송시간</span>항공기와 동일한 운송시간</p>
+                        </li>
+                        <li class="express-table__row">
+                            <p><span>안정성</span>화물조작 회수의 획기적 개선 (50% 향상)</p>
+                        </li>
+                        <li class="express-table__row">
+                            <p><span>비용절감</span>다양한 화물 취급</p>
+                        </li>
+                    </ul>
+                </div>
+                <button class="network-map__more-button">
+                    <span>View More</span>
+                </button>
 
             </div>
         </section>
 
         <footer></footer>
+        <script>
+            fetch('./footer.html')
+            .then(function(response){
+                return response.text();
+            })
+            .then(function(html){
+                document.querySelector('footer').innerHTML = html;
+            })
+        </script>
     </div>
 
     <!-- Swiper JS -->

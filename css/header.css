@@ -1,0 +1,131 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #fff;
+	z-index: 999;
+}
+.header {
+	display: grid;
+	display: -ms-grid;
+	display: -moz-grid;
+	grid-template-columns: 190px auto 70px;
+	-ms-grid-column: 190px auto 70px;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.header > * {
+	height: auto;
+	width: 100%;
+}
+.header__logo {
+	width: 190px;
+	height: 100%;
+}
+.header__logo a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/common/logo_kukbo.png');
+	background-size: 100% auto;
+}
+
+.header__nav {
+	height: 100%;
+	padding-top: 40px;
+}
+.header__nav-list {
+	display: flex;
+	display: flexbox;
+	display: -ms-flexbox;
+	height: 100%;
+}
+.header__nav li {
+	position: relative;
+	width: auto;
+	height: 100%;
+	margin-right: 35px;
+	padding-bottom: 2px;
+}
+.header__nav li:nth-last-child(1) {
+	margin-right: 0;
+}
+.header__nav-item {
+	display: inline-block;
+	height: 100%;
+	padding: 0 2px;
+
+	color: #fff;
+	/* font-family: Montserrat; */
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+	letter-spacing: -0.3px;
+	text-align: center;
+}
+.header__sub-nav {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 220px;
+	padding: 16px 11px;
+	background: rgba(255, 255, 255, 0.8);
+}
+.header__sub-nav a {
+	display: block;
+	height: auto;
+	margin-bottom: 10px;
+
+	color: #1e1e1e;
+	/* font-family: Noto Sans KR; */
+	font-size: 14px;
+	/* font-style: normal; */
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.3px;
+	/* text-align: left; */
+}
+.header__sub-nav li:nth-last-child(1) a {
+	margin-bottom: 0;
+}
+
+.header__nav-item:hover {
+	border-bottom: 2px solid #fff;
+}
+.header__nav-item:hover + .header__sub-nav {
+	display: block;
+}
+.header__sub-nav:hover {
+	display: block;
+}
+.language-wrap {
+	display: flex;
+	display: flexbox;
+	display: -ms-flexbox;
+	justify-content: space-between;
+}
+.language-wrap__globe {
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/common/icon_globe.svg);
+	background-size: 100% 100%;
+}
+
+.language-wrap__lang-button {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/common/icon_hamberger.svg);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+/* header scrolled S */
+header.scrolled {
+	background-color: #252a2f;
+}
+/* header scrolled E */
