@@ -1,5 +1,7 @@
 @import url(./reset.css);
 @import url(./common.css);
+@import url(./header.css);
+@import url(./footer.css);
 
 html,
 body {
@@ -163,11 +165,13 @@ section {
 	top: auto;
 	bottom: 0;
 }
-.features__image {
+.features__image-wrap img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.features__image {
 	min-width: 100%;
 	height: 100%;
 	opacity: 0;
@@ -277,11 +281,10 @@ section {
 }
 .business-contents__item {
 	position: relative;
-	width: 90%;
+	width: 95%;
 	height: 80%;
-	border: solid 1px black;
-	background: lightgray;
-	overflow-y: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+	overflow: hidden;
 
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -294,6 +297,33 @@ section {
 	justify-content: flex-end;
 
 	color: #fff;
+}
+.business-contents__item:nth-child(1),
+.business-contents__item:nth-child(4),
+.business-contents__item:nth-child(7) {
+	justify-self: start;
+	-ms-text-justify: left;
+}
+.business-contents__item:nth-child(2),
+.business-contents__item:nth-child(5),
+.business-contents__item:nth-child(8) {
+	justify-self: center;
+	-ms-text-justify: center;
+}
+.business-contents__item:nth-child(3),
+.business-contents__item:nth-child(6),
+.business-contents__item:nth-child(9) {
+	justify-self: end;
+	-ms-text-justify: right;
+}
+.business-contents__item-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 101%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	z-index: -1;
 }
 .business-contents__title {
 	padding-left: 20px;
@@ -512,6 +542,7 @@ section {
 .network {
 	position: relative;
 	background: linear-gradient(#eaeaea, #eaeaea 30%, #fff);
+	padding-bottom: 110px;
 	/* background: linear-gradient(
 		180deg,
 		#eaeaea 0%,

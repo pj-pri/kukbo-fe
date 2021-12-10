@@ -13,8 +13,8 @@
       type="text/css"
       href="./lib/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css"> -->
 
     <!-- slide styles -->
     <style>
@@ -65,7 +65,7 @@
 
         <!-- header S -->
         <header></header>
-        <script>
+        <!-- <script>
             window.onload = fetch('./header.html')
             .then((response)=>response.text())
             .then(function(HTML){
@@ -87,9 +87,7 @@
                     })
                 })();
             })
-
-            
-        </script>
+        </script> -->
         <!-- header E -->
         
         <div class="banner">
@@ -145,21 +143,12 @@
             <h2 class="blind">Service feature</h2>
             <div class="features__images">
                 <div class="features__image-wrap">
-                    <img class="features__image features__image--view" src="./images/index/feature_01.jpg" alt="">
+                    <img class="features__image features__image--order-1 features__image--view" src="./images/index/feature_01.jpg" alt="">
+                    <img class="features__image features__image--order-2" src="/images/index/feature_02.jpg" alt="">
+                    <img class="features__image features__image--order-3" src="/images/index/feature_03.jpg" alt="">
+                    <img class="features__image features__image--order-4" src="/images/index/feature_04.jpg" alt="">
+                    <img class="features__image features__image--order-5" src="/images/index/feature_05.jpg" alt="">
                 </div>
-                <!-- <div class="features__image">
-                    <img src="/images/index/feature_02.jpg" alt="">
-                </div>
-                <div class="features__image">
-                    <img src="/images/index/feature_03.jpg" alt="">
-                </div>
-                <div class="features__image">
-                    <img src="/images/index/feature_04.jpg" alt="">
-                </div>
-                <div class="features__image">
-                    <img src="/images/index/feature_05.jpg" alt="">
-                </div> -->
-
             </div>
             <div class="features__contents">
                 <ul>
@@ -205,6 +194,7 @@
             </div>
             <div class="container business-contents">
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_01.jpg" alt="">
                     <h3 class="business-contents__title">국제 물류</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">국제 물류</span>
@@ -213,6 +203,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_02.jpg" alt="">
                     <h3 class="business-contents__title">화물 운송</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">컨테이너 & 화물 운송</span>
@@ -221,6 +212,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_03.jpg" alt="">
                     <h3 class="business-contents__title">창고 및 보관</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">창고 및 보관</span>
@@ -229,6 +221,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_04.jpg" alt="">
                     <h3 class="business-contents__title">터미널 & 항만</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">터미널 & 항만</span>
@@ -237,6 +230,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_05.jpg" alt="">
                     <h3 class="business-contents__title">바이오</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">바이오</span>
@@ -245,6 +239,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_06.jpg" alt="">
                     <h3 class="business-contents__title">골프웨어</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">골프웨어</span>
@@ -253,6 +248,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_07.jpg" alt="">
                     <h3 class="business-contents__title">모빌리티 플랫폼</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">모빌리티 플랫폼</span>
@@ -261,6 +257,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_08.jpg" alt="">
                     <h3 class="business-contents__title">KF 방역마스크 사업</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">KF 방역마스크 사업</span>
@@ -269,6 +266,7 @@
                     </a>
                 </div>
                 <div class="business-contents__item">
+                    <img class="business-contents__item-bg" src="./images/index/business_09.jpg" alt="">
                     <h3 class="business-contents__title">2H TOWN</h3>
                     <a href="" class="business-contents__item--hover business-item">
                         <span class="business-item__title">2H TOWN</span>
@@ -365,21 +363,13 @@
         </section>
 
         <footer></footer>
-        <script>
-            fetch('./footer.html')
-            .then(function(response){
-                return response.text();
-            })
-            .then(function(html){
-                document.querySelector('footer').innerHTML = html;
-            })
-        </script>
+        <script src="./js/common/HeaderFooter.js"></script>
     </div>
 
     <!-- Swiper JS -->
     <script  src="./lib/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
 
 </body>
 </html>

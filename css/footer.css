@@ -2,6 +2,268 @@ footer {
 	height: 400px;
 	width: 100%;
 	background: #252a2f;
+	padding-top: 25px;
+	padding-bottom: 50px;
 
 	color: #fff;
+}
+.footer {
+	display: grid;
+	display: -ms-grid;
+
+	grid-template-columns: auto 800px;
+	-ms-grid-columns: auto 800px;
+	grid-template-rows: auto auto auto;
+	-ms-grid-rows: auto auto auto;
+}
+.footer-item:nth-child(1) {
+	padding-bottom: 35px;
+	grid-column: 2/3;
+	-ms-grid-column: 2/3;
+
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: right;
+	-ms-text-justify: right;
+}
+.footer-item:nth-child(1) input {
+	display: none;
+}
+.footer-item__drop-box {
+	position: relative;
+	border: solid 1px #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.footer-item__drop-box:nth-child(2) {
+	margin-right: 40px;
+}
+.footer-item__drop-box:nth-child(2) span {
+	padding-right: 30px;
+}
+.footer-item__drop-box:nth-child(2) span::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform-origin: 50% 35%;
+	transform: translateY(-20%);
+	border-width: 7px;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	transition: 0.3s;
+}
+.footer-item__drop-box:nth-child(4) span {
+	padding-right: 65px;
+}
+.footer-item__drop-box:nth-child(4) span::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform-origin: 50% 35%;
+	transform: translateY(-20%);
+	border-width: 7px;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	transition: 0.3s;
+}
+.footer-item:nth-child(1) input:checked + label span::after {
+	transform: translateY(-40%) rotate(-180deg);
+}
+
+.footer-item:nth-child(3) {
+	padding-bottom: 50px;
+}
+
+address {
+	width: 100%;
+}
+.address-item {
+	width: 100%;
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	-ms-text-justify: space-between;
+}
+.address-item__title {
+	width: 70px;
+
+	/* font-family: Montserrat; */
+	font-size: 14px;
+	/* font-style: normal; */
+	font-weight: 700;
+	line-height: 27px;
+	letter-spacing: 0px;
+	/* text-align: left; */
+}
+.address-item__content {
+	width: auto;
+
+	/* font-family: Montserrat; */
+	font-size: 14px;
+	/* font-style: normal; */
+	font-weight: 500;
+	line-height: 27px;
+	letter-spacing: 0px;
+	/* text-align: left; */
+}
+.address-item__content--location {
+	width: 300px;
+}
+.address-item__content--tel {
+	width: 160px;
+}
+.address-item__content--fax {
+	width: 135px;
+}
+
+.footer-logo {
+	width: 88%;
+}
+.address-item {
+	display: flex;
+	display: -ms-flexbox;
+}
+.footer-item:nth-child(4) {
+	grid-column: 2/3;
+	-ms-grid-column: 2/3;
+	grid-row: 3/4;
+	-ms-grid-row: 3/4;
+
+	display: flex;
+	display: -ms-flexbox;
+}
+.footer-item:nth-child(4) > * {
+	/* width: 100%; */
+}
+.footer-etc {
+	width: 50%;
+}
+.footer-etc p {
+	/* font-family: Noto Sans KR; */
+	font-size: 14px;
+	/* font-style: normal; */
+	font-weight: 700;
+	line-height: 27px;
+	letter-spacing: 0px;
+}
+.footer-etc small {
+	display: block;
+	margin-bottom: 45px;
+
+	/* font-family: Montserrat; */
+	font-size: 12px;
+	/* font-style: normal; */
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	/* text-align: left; */
+}
+.policy-wrap {
+	display: flex;
+}
+.policy-wrap a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+	color: rgba(255, 255, 255, 0.8);
+	/* font-family: Noto Sans KR; */
+	font-size: 14px;
+	/* font-style: normal; */
+	font-weight: 700;
+	line-height: 27px;
+	letter-spacing: 0px;
+	/* text-align: left; */
+}
+.policy-wrap a:nth-child(1) {
+	margin-right: 50px;
+}
+.cowokers-logos {
+	width: 40%;
+
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: repeat(4, 1fr);
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	-ms-grid-rows: 1fr 1fr;
+	align-items: center;
+}
+.cowoker-item {
+	/* grid-column: 2/3;
+	-ms-grid-column: 2/3;
+	grid-row: 3/4;
+	-ms-grid-row: 3/4; */
+}
+.cowoker-item:nth-child(1) {
+	width: 55px;
+	height: 55px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -1px 0;
+}
+
+.cowoker-item:nth-child(2) {
+	width: 63px;
+	height: 40px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -73px -8px;
+}
+
+.cowoker-item:nth-child(3) {
+	width: 60px;
+	height: 41px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -153px -6px;
+}
+.cowoker-item:nth-child(4) {
+	width: 57px;
+	height: 23px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: 0 -80px;
+
+	grid-column: 1/2;
+	-ms-grid-column: 1/2;
+	grid-row: 2/3;
+	-ms-grid-row: 2/3;
+}
+.cowoker-item:nth-child(5) {
+	width: 51px;
+	height: 41px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -78px -73px;
+
+	grid-column: 2/3;
+	-ms-grid-column: 2/3;
+	grid-row: 2/3;
+	-ms-grid-row: 2/3;
+}
+.cowoker-item:nth-child(6) {
+	width: 44px;
+	height: 44px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -161px -70px;
+
+	grid-column: 3/4;
+	-ms-grid-column: 3/4;
+	grid-row: 2/3;
+	-ms-grid-row: 2/3;
+}
+.cowoker-item:nth-child(7) {
+	width: 50px;
+	height: 36px;
+	background-image: url(../images/common/logo_cowokers.png);
+	background-size: 280px;
+	background-position: -232px -74px;
+
+	grid-column: 4/5;
+	-ms-grid-column: 4/5;
+	grid-row: 2/3;
+	-ms-grid-row: 2/3;
 }

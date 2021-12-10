@@ -63,6 +63,60 @@ var feature = {
 };
 
 // feature fixed js E
+// feature img change S
+var featureImgs = {
+	wrap: document.querySelector('.features__images'),
+	image1: document.querySelector('.features__image--order-1'),
+	image2: document.querySelector('.features__image--order-2'),
+	image3: document.querySelector('.features__image--order-3'),
+	image4: document.querySelector('.features__image--order-4'),
+	image5: document.querySelector('.features__image--order-5'),
+};
+
+function featureImg() {
+	var top = findAbsoluteTop(featureImgs.wrap) / 5;
+	var viewHeight = window.innerHeight;
+	var windowPoint = window.scrollY;
+
+	if (top + viewHeight < windowPoint && top + viewHeight * 2 > windowPoint) {
+		featureImgs.image1.style = 'opacity:0;';
+		featureImgs.image2.style = 'opacity:1;';
+		featureImgs.image3.style = 'opacity:0;';
+		featureImgs.image4.style = 'opacity:0;';
+		featureImgs.image5.style = 'opacity:0;';
+	} else if (
+		top + viewHeight * 2 < windowPoint &&
+		top + viewHeight * 3 > windowPoint
+	) {
+		featureImgs.image1.style = 'opacity:0;';
+		featureImgs.image2.style = 'opacity:0;';
+		featureImgs.image3.style = 'opacity:1;';
+		featureImgs.image4.style = 'opacity:0;';
+		featureImgs.image5.style = 'opacity:0;';
+	} else if (
+		top + viewHeight * 3 < windowPoint &&
+		top + viewHeight * 4 > windowPoint
+	) {
+		featureImgs.image1.style = 'opacity:0;';
+		featureImgs.image2.style = 'opacity:0;';
+		featureImgs.image3.style = 'opacity:0;';
+		featureImgs.image4.style = 'opacity:1;';
+		featureImgs.image5.style = 'opacity:0;';
+	} else if (top + viewHeight * 4 < windowPoint) {
+		featureImgs.image1.style = 'opacity:0;';
+		featureImgs.image2.style = 'opacity:0;';
+		featureImgs.image3.style = 'opacity:0;';
+		featureImgs.image4.style = 'opacity:0;';
+		featureImgs.image5.style = 'opacity:1;';
+	} else {
+		featureImgs.image1.style = 'opacity:1;';
+		featureImgs.image2.style = 'opacity:0;';
+		featureImgs.image3.style = 'opacity:0;';
+		featureImgs.image4.style = 'opacity:0;';
+		featureImgs.image5.style = 'opacity:0;';
+	}
+}
+// feature img change E
 
 // vision fixed js S
 var vision = {
@@ -94,6 +148,7 @@ var vision = {
 window.onscroll = () => {
 	feature.scrollTarget();
 	vision.scrollTarget();
+	featureImg();
 };
 
 function findAbsoluteTop(target) {
