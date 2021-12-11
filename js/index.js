@@ -3,13 +3,13 @@ var swiper = new Swiper('.mySwiper', {
 	spaceBetween: 0,
 	centeredSlides: true,
 	autoplay: {
-		delay: 2500,
+		delay: 10000,
 		disableOnInteraction: false,
 	},
 	on: {
 		init: function () {
 			const progressbar = document.querySelector('#progressbar');
-			progressbar.style = 'animation:autoProgress 2.5s';
+			progressbar.style = 'animation:autoProgress 10s';
 		},
 		slideChange: function () {
 			const slidePageCount = document.querySelector('#slidePageCount');
@@ -21,7 +21,7 @@ var swiper = new Swiper('.mySwiper', {
 		},
 		slideChangeTransitionEnd: function () {
 			const progressbar = document.querySelector('#progressbar');
-			progressbar.style = 'animation:autoProgress 2.5s';
+			progressbar.style = 'animation:autoProgress 10s';
 		},
 	},
 });
