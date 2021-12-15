@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business ethics - company</title>
+    <link rel="stylesheet" href="/css/company/ethics.css">
+</head>
+<body>
+    <div class="wrap">
+       <header></header>
+        <main class="main">
+        <!-- main S -->
+
+            <!-- banner top S -->
+            <div class="banner-top">
+                <div class="banner-top__content">
+                    <h1>기업 윤리</h1>
+                    <p>COMPANY</p>
+                </div>
+            </div>
+            <div class="inner-sub-nav">
+                <ul class="container">
+                    <li class="inner-sub-nav__item"><a href="">회사개요</a></li>
+                    <li class="inner-sub-nav__item"><a href="">CEO</a></li>
+                    <li class="inner-sub-nav__item"><a href="">연혁</a></li>
+                    <li class="inner-sub-nav__item"><a href="">수상 & 인증 현황</a></li>
+                    <li class="inner-sub-nav__item inner-sub-nav__item--active"><a href="">기업 윤리</a></li>
+                    <li class="inner-sub-nav__item"><a href="">조직 구성도</a></li>
+                </ul>
+            </div>
+            <!-- banner top E -->
+
+            <!-- business-ethics S -->
+            <div class="business-ethics">
+                <div class="business-ethics__box"></div>
+                <p class="business-ethics__title">국보 기업 윤리</p>
+                <ul class="business-ethics__filter">
+                    <li><button id="manifesto" onclick="switchView(this)" class="business-ethics__filter-item business-ethics__filter-item--active">실천 선언문</button></li>
+                    <li><button id="purpose" onclick="switchView(this)" class="business-ethics__filter-item">실천 지침서</button></li>
+                </ul>
+
+                <!-- manifesto S -->
+                <section id="businessManifesto" class="business-ethics__contents manifesto">
+                    <h2 class="manifesto__title">국보인의 십계명 나의 약속</h2>
+                    <div class="manifesto__contents">
+                        <ol class="manifesto__list">
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>01</span>
+                                    나는 고객과의 약속을 반드시 지키며 고객만족 향상을 위하여 매순간 최선을 다한다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>02</span>
+                                    나는 협력사와 원만한 유대관계를 형성하고 이를 유지 발전시켜 나간다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>03</span>
+                                    나는 회사의 규정을 지키며 지식경영의 실천과 일등화 전략에 앞장선다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>04</span>
+                                    나는 노사관계의 원만하고 협동적인 형성과 발전을 위해 이해관계의 조정, 제도개선에 앞장선다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>05</span>
+                                    나는 업무수행에 있어 최선을 다하고 격식있는 인품을 유지한다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>06</span>
+                                    나는 동료와 상호협력하고 존중하며 선의의 경쟁자로서 공동 발전해 나간다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>07</span>
+                                    나는 자기 자신과의 다짐을 지켜나가며 스스로 자기계발에 앞장선다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>08</span>
+                                    나는 가정에 충실하고 家和萬事成의 뜻을 명심하여 행복한 가정생활이 사회활동으로 이어지게 한다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>09</span>
+                                    나는 국가에 대하여 법규를 준수하고 세계 일류 국가로서의 발전에 책임과 역할을 다한다.
+                                </p>
+                            </li>
+                            <li class="manifesto__item">
+                                <p>
+                                    <span>10</span>
+                                    나는 지역경제 발전과 내 고장의 참된 사회문화 형성에 지역사회의 일원으로서 최선을 다한다.
+                                </p>
+                            </li>
+                        </ol>
+                        <div class="manifesto__etc">
+                            <p>국보인의 십계명(나의 약속)을 성실히 실천할 것을 다집합니다.</p>
+                            <p>2020.01.01</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- manifesto E -->
+
+                <!-- purpose S -->
+                <section id="businessPurpose" class="business-ethics__contents purpose" style="display:none;">
+                    <h2 class="purpose__title">목적</h2>
+                    <p class="purpose__description">본 지침은 당사의 경쟁력 강화를 위한 시행 조치의 일환으로 내부적으로 근무기강 확립을 통한 개개인의 
+정신재무장운동으로서 이를 우리 기업문화의 한 축으로 정착시켜 건전한 근무환경 조성을 더욱 공고히 
+하기 위함을 목적으로 한다.</p>
+                    <div class="purpose__contents">
+                        <ol class="purpose__list">
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 1장</span>
+                                <div class="purpose__item-txt-wrap">
+                                    <p>근무기강 확립</p>
+                                    <ul>
+                                        <li>
+                                            <p>집중근무 강화</p>
+                                        </li>
+                                        <li>
+                                            <p>조직력 강화</p>
+                                        </li>
+                                        <li>
+                                            <p>올바른 회식 문화정착</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 2장</span>
+                                <p>對 고객과의 관계</p>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 3장</span>
+                                <div class="purpose__item-txt-wrap">
+                                    <p>對 협력사와의 관계</p>
+                                    <ul>
+                                        <li>
+                                            <p>협력사에 대한 예절</p>
+                                        </li>
+                                        <li>
+                                            <p>균등한 거래 절차의 부여</p>
+                                        </li>
+                                        <li>
+                                            <p>청렴한 행위</p>
+                                        </li>
+                                        <li>
+                                            <p>직무직위를 이용한 부당한 행위</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 4장</span>
+                                <p>회사재산의 보호</p>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 5장</span>
+                                <p>업무개선 및 서비스 향상</p>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 6장</span>
+                                <p>수익개선과 경비절감</p>
+                            </li>
+                            <li class="purpose__item">
+                                <span class="purpose__item-number">제 7장</span>
+                                <p>자기관리 철저</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <!-- purpose E -->
+
+            </div>
+            <!-- business ethics E -->
+
+
+            <script>
+                function switchView(view) {
+
+                    var purpose = document.querySelector('#businessPurpose');
+                    var manifesto = document.querySelector('#businessManifesto');
+                    var buttons = document.querySelectorAll('.business-ethics__filter-item'); 
+
+                    if(view.id === 'manifesto'){
+                        purpose.style = 'display:none;';
+                        manifesto.style = 'display:block;';
+                    }else {
+                        purpose.style = 'display:block;';
+                        manifesto.style = 'display:none;';
+                    }
+
+                    buttons.forEach(item =>{
+                        item.className = 'business-ethics__filter-item';
+                    })
+                    view.className = 'business-ethics__filter-item business-ethics__filter-item--active';
+                }
+
+            </script>
+
+        <!-- main E -->
+        </main>
+        <footer></footer>
+    </div>
+    <script src="../js/common/HeaderFooter.js"></script>
+</body>
+</html>

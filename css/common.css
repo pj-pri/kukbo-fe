@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -25,92 +26,62 @@ button {
 }
 
 :lang(ko) {
-}
-:lang() {
-}
-:lang(zh-CN) {
+	font-family: 'Noto Sans KR', sans-serif;
 }
 :lang(en) {
+	font-family: 'Montserrat', sans-serif;
+}
+:lang(zh-CN) {
 }
 
 :root {
 	/* color S */
 
-	--blue_ip: #0047bb;
-	--blue_dark: #002f7c;
-	--darkness: #010440;
-	--white: #fff;
-	--black: #000;
-	--dark: #1e1e1e;
-	--gray: #88929e;
-	--gray_dark: #4b4b57;
-	--gray_medium: #bdc5ca;
-	--gray_light: #dcdee7;
-	--gray_shine: #fafafc;
-
+	--pri-ip-blue: #0047bb;
+	--pri-darkness: #010440;
+	--pri-white: #ffffff;
+	--secondary-dark: #1e1e1e;
+	--secondary-dark-gray: #4b4b57;
+	--secondary-gray: #88929e;
+	--secondary-medium: #bdc5ca;
+	--secondary-light: #dcdee7;
+	--secondary-shine: #fafafc;
 	/* color E */
 
-	/* pc S */
-	--font_size_pc_h2: 36px;
-	--font_size_pc_h3: 28px;
-	--font_size_pc_h4: 28px;
-	--font_size_pc_h5: 24px;
-	--font_size_pc_h6: 16px;
-	--font_size_pc_body1: 16px;
-	--font_size_pc_body2: 14px;
+	/* fonts S */
+	--font-size-h2: 36px;
+	--font-size-h3: 28px;
+	--font-size-h4: 28px;
+	--font-size-h5: 24px;
+	--font-size-h6: 16px;
+	--font-size-body1: 18px;
+	--font-size-body2: 14px;
 
-	--line_height_pc_h2: 54px;
-	--line_height_pc_h3: 42px;
-	--line_height_pc_h4: 42px;
-	--line_height_pc_h5: 36px;
-	--line_height_pc_h6: 24px;
-	--line_height_pc_body1: 24px;
-	--line_height_pc_body2: 23px;
+	--font-lh-h2: 54px;
+	--font-lh-h3: 42px;
+	--font-lh-h4: 42px;
+	--font-lh-h5: 36px;
+	--font-lh-h6: 24px;
+	--font-lh-body1: 24px;
+	--font-lh-body2: 23px;
 
-	--letter_spacing_pc_h2: 0.5px;
-	--letter_spacing_pc_h3: 0.2px;
-	--letter_spacing_pc_h4: 0.5px;
-	--letter_spacing_pc_h5: 0.5px;
-	--letter_spacing_pc_h6: 0.5px;
-	--letter_spacing_pc_body1: 0.2px;
-	--letter_spacing_pc_body2: 0.2px;
-	/* pc E */
+	--font-ls-h2: 0.5px;
+	--font-ls-h3: 0.2px;
+	--font-ls-h4: 0.5px;
+	--font-ls-h5: 0.5px;
+	--font-ls-h6: 0.5px;
+	--font-ls-body1: 0.2px;
+	--font-ls-body2: 0.2px;
 
-	/* mobile, tablet S */
-	--font_size_mt_h2: 24px;
-	--font_size_mt_h3: 18px;
-	--font_size_mt_h4: 18px;
-	--font_size_mt_h5: 16px;
-	--font_size_mt_h6: 14px;
-	--font_size_mt_body1: 14px;
-	--font_size_mt_body2: 12px;
+	--font-bold-h2: 700;
+	--font-bold-h2: 500;
+	--font-bold-h2: 700;
+	--font-bold-h2: 700;
+	--font-bold-h2: 700;
+	--font-bold-body1: 500;
+	--font-bold-body2: 500;
 
-	--line_height_mt_h2: 36px;
-	--line_height_mt_h3: 28px;
-	--line_height_mt_h4: 28px;
-	--line_height_mt_h5: 24px;
-	--line_height_mt_h6: 23px;
-	--line_height_mt_body1: 23px;
-	--line_height_mt_body2: 19px;
-
-	--letter_spacing_mt_h2: 0.5px;
-	--letter_spacing_mt_h3: 0.2px;
-	--letter_spacing_mt_h4: 0.5px;
-	--letter_spacing_mt_h5: 0.5px;
-	--letter_spacing_mt_h6: 0.5px;
-	--letter_spacing_mt_body1: 0.2px;
-	--letter_spacing_mt_body2: 0.2px;
-	/* mobile, tablet E */
-
-	/* font E */
-
-	/* white_space S */
-	--white_space_pc1: 24px;
-	--white_space_pc2: 48px;
-
-	--white_space_mt1: 20px;
-	--white_space_mt2: 40px;
-	/* white_space E */
+	/* fonts E */
 }
 
 /* 감추고 싶은 글자에 사용하는 css S */
