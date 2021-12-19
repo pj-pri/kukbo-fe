@@ -165,64 +165,84 @@ header {
 	width: 100%;
 }
 
+/* relation list S */
 .relation__list {
+	width: 100%;
 	display: grid;
-	display: -ms-grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	-ms-grid-columns: 1fr 1fr 1fr;
+
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+
+	text-align: center;
 }
 .relation__item {
 	position: relative;
-	height: 370px;
+	height: auto;
+}
 
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);
-	overflow: hidden;
-	margin-right: 5px;
-	margin-bottom: 10px;
-
-	color: #fff;
-}
-.relation__item::before {
+.relation__item-wrap {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	transition: 0.3s;
-}
-.relation__item:nth-child(1)::before {
-	content: url(/images/relation/relation_01.jpg);
-	width: 200px;
-}
-.relation__item:nth-child(2)::before {
-	content: url(/images/relation/relation_02.jpg);
-}
-.relation__item:nth-child(3)::before {
-	content: url(/images/relation/relation_03.jpg);
-}
-.relation__item:nth-child(4)::before {
-	content: url(/images/relation/relation_04.jpg);
-}
-.relation__item:nth-child(5)::before {
-	content: url(/images/relation/relation_05.jpg);
-}
-.relation__item:nth-child(6)::before {
-	content: url(/images/relation/relation_06.jpg);
-}
-.relation__item::after {
-	content: '';
-	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
-	transition: 0.3s;
-}
-.relation__item:hover::before {
-	display: none;
-}
-.relation__item:hover::after {
 	background: rgba(0, 0, 0, 0.7);
-	/* z-index: -1; */
+	padding-top: 64px;
+	padding-bottom: 17px;
+
+	text-align: center;
+	color: var(--pri-white);
 }
+
+.relation__item-title {
+	margin-bottom: 15px;
+
+	font-size: var(--font-size-body1);
+	font-weight: var(--font-weight-body1);
+	line-height: var(--font-lh-body1);
+	letter-spacing: var(--font-ls-body1);
+}
+.relation__item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	font-size: var(--font-size-body2);
+	font-weight: var(--font-weight-body2);
+	line-height: var(--font-lh-body2);
+	letter-spacing: var(--font-ls-body2);
+}
+.relation__item-content address {
+}
+.relation__item-tel {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.relation__item-tel span {
+	position: relative;
+	padding-left: 36px;
+}
+.relation__item-tel span::before {
+	content: url(/images/relation/icon_tel.svg);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 26px;
+	height: 26px;
+}
+.relation__item-tel span:nth-child(2) {
+	margin-left: 10px;
+}
+
+.relation__img {
+	position: relative;
+	width: 100%;
+
+	z-index: -1;
+}
+.relation__item:hover .relation__img {
+	z-index: -1;
+}
+/* relation list E */ ;

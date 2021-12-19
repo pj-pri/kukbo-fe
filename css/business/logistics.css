@@ -334,14 +334,14 @@ header {
 .cy-cfs-list__item--divide dt:nth-child(3) {
 	grid-column: 2/3;
 	border-left: 1px solid #084a8a;
-	padding-left: 16px;
+	padding-left: 8px;
 }
 .cy-cfs-list__item--divide dd {
 	grid-row: 2/3;
 }
 .cy-cfs-list__item--divide dd:nth-child(4) {
 	border-left: 1px solid #084a8a;
-	padding-left: 16px;
+	padding-left: 8px;
 }
 
 .mcc-spect-list {
@@ -368,6 +368,7 @@ header {
 	margin-right: 0;
 }
 .mcc-spect-list__item h4 {
+	margin-bottom: 15px;
 }
 .mcc-spect-list__item p {
 	/* font-family: Noto Sans KR; */

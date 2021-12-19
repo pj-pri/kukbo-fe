@@ -27,9 +27,11 @@ button {
 
 :lang(ko) {
 	font-family: 'Noto Sans KR', sans-serif;
+	word-break: keep-all;
 }
 :lang(en) {
 	font-family: 'Montserrat', sans-serif;
+	word-break: keep-all;
 }
 :lang(zh-CN) {
 }
@@ -73,13 +75,13 @@ button {
 	--font-ls-body1: 0.2px;
 	--font-ls-body2: 0.2px;
 
-	--font-bold-h2: 700;
-	--font-bold-h2: 500;
-	--font-bold-h2: 700;
-	--font-bold-h2: 700;
-	--font-bold-h2: 700;
-	--font-bold-body1: 500;
-	--font-bold-body2: 500;
+	--font-weight-h2: 700;
+	--font-weight-h2: 500;
+	--font-weight-h2: 700;
+	--font-weight-h2: 700;
+	--font-weight-h2: 700;
+	--font-weight-body1: 500;
+	--font-weight-body2: 500;
 
 	/* fonts E */
 }

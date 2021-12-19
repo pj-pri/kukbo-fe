@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA</title>
+    <link rel="stylesheet" href="/css/media/media.css">
+</head>
+<body>
+    <div class="wrap">
+        <header></header>
+        <main class="main">
+        <!-- main S -->
+         
+            <!-- banner top S -->
+            <div class="banner-top">
+                <div class="banner-top__content">
+                    <h1>미디어</h1>
+                    <p>MEDIA</p>
+                </div>
+            </div>
+
+            <div class="inner-sub-nav">
+                <ul class="container">
+                    <li class="inner-sub-nav__item inner-sub-nav__item--active"><a id="news" href="/media/media.html?page=media">국보새소식</a></li>
+                    <li class="inner-sub-nav__item"><a id="promotion" href="/media/media.html?page=promotion">홍보자료실</a></li>
+                </ul>
+            </div>
+            <!-- banner top E -->
+
+            <!-- news in S -->
+            <section id="newsContent" class="contents">
+                <div class="top-box"></div>
+                <div class="news__content">
+                    <h2 class="content__title">새소식</h2>
+                    <p class="content__sub-title">국보의 소식을 만나보세요</p>
+                    <div class="search-box">
+                        <input type="search" name="" id="" maxlength="1000" placeholder="검색어를 입력하세요.">
+                        <button>
+                            <img src="/images/media/icon_search.svg" title="검색하기" alt="검색하기">
+                        </button>
+                    </div>
+                    <table class="news-list">
+                        <thead>
+                            <tr class="news-list__head">
+                                <th class="news-list__head-num">No</th>
+                                <th class="news-list__head-content">기사제목</th>
+                                <th class="news-list__head-writer">작성자</th>
+                                <th class="news-list__head-date">날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="news-list__content">
+                                <td class="news_item__num">40</td>
+                                <td class="news-item__content">임시주주총회(2021년제1회) 소집공고 및 제66기(2019회계년도) 사업보고서 게재</td>
+                                <td class="news-item__writer">관리자</td>
+                                <td class="news-item__date">2021.02.22</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button>PREV</button>
+                        <div class="page-button-wrap">
+                            <button>&#60;</button>
+                            <button class="now-page">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>10</button>
+                            <button>&#62;</button>
+                        </div>
+                        <button>NEXT</button>
+                    </div>
+                </div>
+            </section>
+            <!-- news E -->
+
+            <!-- promotion in S -->
+            <section id="promotionContent" class="contents" style="display: none;">
+                <div class="top-box"></div>
+                <div class="promotion__content">
+                    <h2 class="content__title">홍보 자료실</h2>
+                    <p class="content__sub-title">국보의 소식을 만나보세요</p>
+                    <dl class="promotions">
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">(영상)벅시 합법 타다 서비스 시작</dt>
+                            <p class="promotion-item__date">2021년 2월 3일</p>
+                        </div>
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">(영상) 창립 제66주년, 상장 30주년 기념식 및 본사 부산이전 행사 영상</dt>
+                            <p class="promotion-item__date">2019년 12월 27일 </p>
+                        </div>
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">운송서비스 요율</dt>
+                            <p class="promotion-item__date">2021년 2월 3일</p>
+                        </div>
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">(주)국보 운송계약서</dt>
+                            <p class="promotion-item__date">2021년 2월 3일</p>
+                        </div>
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">(주)국보 직업방송TV 방영분</dt>
+                            <p class="promotion-item__date">2021년 2월 3일</p>
+                        </div>
+                        <div class="promotion-item">
+                            <div class="promotion-item__img">
+                            </div>
+                            <dt class="promotion-item__title">(주)국보 홍보동영상</dt>
+                            <p class="promotion-item__date">2021년 2월 3일</p>
+                        </div>
+                    </dl>
+                </div>
+                </div>
+            </section>
+            <!-- news E -->
+        <!-- main E -->
+        </main>
+
+        <footer></footer>
+    </div>
+    <script src="/js/common/HeaderFooter.js"></script>
+    <script>
+
+        // url로 페이지 변경
+        (function(){
+            if(location.href.indexOf('page=')){
+                
+                if(location.href.split('page=')[1].substring(0,9) === 'promotion'){
+                    document.querySelector('.inner-sub-nav__item--active').className = 'inner-sub-nav__item';
+                    document.querySelector('#promotion').parentNode.className = 'inner-sub-nav__item inner-sub-nav__item--active';
+                    document.querySelector('#newsContent').style.display = 'none';
+                    document.querySelector('#promotionContent').style.display = 'block';
+                }
+            }
+        })();
+
+
+        document.querySelector('#news').addEventListener('click',function(e){
+            // e.preventDefault();
+            // document.querySelector('.inner-sub-nav__item--active').className = 'inner-sub-nav__item';
+            // e.target.parentNode.className = 'inner-sub-nav__item inner-sub-nav__item--active';
+            // document.querySelector('#newsContent').style.display = 'block';
+            // document.querySelector('#promotionContent').style.display = 'none';
+        });
+        document.querySelector('#promotion').addEventListener('click',function(e){
+            // e.preventDefault();
+            // document.querySelector('.inner-sub-nav__item--active').className = 'inner-sub-nav__item';
+            // e.target.parentNode.className = 'inner-sub-nav__item inner-sub-nav__item--active';
+            // document.querySelector('#newsContent').style.display = 'none';
+            // document.querySelector('#promotionContent').style.display = 'block';
+        });
+
+    </script>
+</body>
+</html>

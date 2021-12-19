@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>network</title>
+    <link rel="stylesheet" href="/css/network/network.css">
+    
+</head>
+<body>
+    <div class="wrap">
+        <header></header>
+        <main class="main">
+            <!-- main S -->
+         
+            <!-- banner top S -->
+            <div class="banner-top">
+                <div class="banner-top__content">
+                    <h1>네트워크</h1>
+                    <p>NETWORK</p>
+                </div>
+            </div>
+
+            <!-- banner top E -->
+
+            <!-- network content S -->
+            <section id="networkContent" class="contents">
+                <div class="top-box"></div>
+                <div class="network__content">
+                    <h2 class="content__title">네트워크</h2>
+                    <div class="content__txt">
+                        <div class="wrap-network-list">
+                            <div class="filter">
+                                <input type="checkbox" name="" id="filterTitle">
+                                <label for="filterTitle">
+                                    <h3 class="filter-title">FILTER WITH</h3>
+                                </label>
+                                <label for="filterTitle"></label>
+                                
+                                <ul id="filterItems" class="filter-items">
+                                    <li class="filter__item">
+                                        <button id="logistics" onclick="viewList(this)">물류사업본부 (17)</butt>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button id="operation" onclick="viewList(this)">경영지원본부 (4)</button>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button id="strategy" onclick="viewList(this)">전략기획실 (1)</button>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button id="new" onclick="viewList(this)">신규사업부 (1)</button>
+                                    </li>
+                                    <li class="filter__item">
+                                        <button id="accounting" onclick="viewList(this)">내부회계관리실 (1)</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <dl class="withs">
+                                <div class="wrap-withs">
+                                    <dt id="titleLogistics" class="withs-title">물류사업본부</dt>
+                                    <dd id="withLogistics" class="withs-items">
+                                        <dl>
+                                            <dt class="withs-items__title">남부지사</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">운영팀</em>
+                                                <address class="withs-item__txt">
+                                                    부산 수영구 광남로 42, 국보빌딩 6층 <br>
+                                                    Tel : 051-463-4853 <br>
+                                                    Fax : 051-467-1641
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">울산영업소</em>
+                                                <address class="withs-item__txt">
+                                                    울산광역시 남주 장생포로 303 울산항역 구내<br>
+                                                    Tel : 052-258-1084<br>
+                                                    Fax : 052-258-1085
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">약목영업소</em>
+                                                <address class="withs-item__txt">
+                                                    경북 칠곡군 약목면 칠곡대로 635 약목역 내<br>
+                                                    Tel : 054-975-0167<br>
+                                                    Fax : 054-975-0169
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">광양영업소</em>
+                                                <address class="withs-item__txt">
+                                                    전라남도 광양시 항만2로 115, 태웅글로벌 내 <br>
+                                                    Tel: 061-794-0863<br>
+                                                    Fax : 061-794-0866
+                                                </address>
+                                            </dd>
+                                            <dt class="withs-items__title">경인지사</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">부곡영업소</em>
+                                                <address class="withs-item__txt">
+                                                    경기도 의왕시 창말로 39 (의왕 ICD)
+                                                    Tel : 031-462-0435
+                                                    Fax : 031-462-0439
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">인천영업소</em>
+                                                <address class="withs-item__txt">
+                                                    인천광역시 중구 축항대로 269번길 125
+                                                    Tel : 032-889-8352
+                                                    Fax : 032-883-4003
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">아암물류(팀)센터</em>
+                                                <address class="withs-item__txt">
+                                                    인천광역시 중구 축항대로 269번길 125 <br>
+                                                    Tel : 032-889-8902 <br>
+                                                    Fax : 032-889-8906
+                                                </address>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+
+                                    <dt id="titleOperation" class="withs-title">경영지원본부</dt>
+                                    <dd id="withOperation" class="withs-items">
+                                        <dl>
+                                            <dt class="withs-items__title">경영지원부</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">경영지원팀</em>
+                                                <address class="withs-item__txt">
+                                                    부산광역시 수영구 광남로 42, 국보빌딩 8층 <br>
+                                                    Tel : 051-600-6805 <br>
+                                                    Fax : 051-600-6810
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">안전관리팀</em>
+                                                <address class="withs-item__txt">
+                                                    경남 양산시 물금읍 제방로 225 양산ICD 7단지 <br>
+                                                    Tel : 055-371-6122 <br>
+                                                    Fax : 055-371-6126
+                                                </address>
+                                            </dd>
+                                            <dt class="withs-items__title">재무운영부</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">재무관리팀</em>
+                                                <address class="withs-item__txt">
+                                                    부산광역시 수영구 광남로 42, 국보빌딩 7층<br>
+                                                    Tel : 051-600-6908<br>
+                                                    Fax : 051-600-6930
+                                                </address>
+                                            </dd>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">고객관리팀</em>
+                                                <address class="withs-item__txt">
+                                                    부산광역시 수영구 광남로 42, 국보빌딩 7층<br>
+                                                    Tel : 051-600-6914<br>
+                                                    Fax : 051-600-6930
+                                                </address>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                    <dt id="titleStrategy" class="withs-title">전략기획실</dt>
+                                    <dd id="withStrategy" class="withs-items">
+                                        <dl>
+                                            <dt class="withs-items__title">전략기획실</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">전략기획실</em>
+                                                <address class="withs-item__txt">
+                                                    서울특별시 강남구 학동로 322 <br>
+                                                    Tel : 02-548-7650<br>
+                                                    Fax : 02-548-7651
+                                                </address>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                    <dt id="titleNew" class="withs-title">신규사업본부</dt>
+                                    <dd id="withNew" class="withs-items">
+                                        <dl>
+                                            <dt class="withs-items__title">신규사업본부</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">신규사업본부</em>
+                                                <address class="withs-item__txt">
+                                                    서울특별시 강남구 학동로 322 <br>
+                                                    Tel : 02-548-7650<br>
+                                                    Fax : 02-548-7651
+                                                </address>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                    <dt id="titleAccounting" class="withs-title">내부회계관리실</dt>
+                                    <dd id="withAccounting" class="withs-items">
+                                        <dl>
+                                            <dt class="withs-items__title">내부회계관리실</dt>
+                                            <dd class="withs-item">
+                                                <em class="withs-item__title">내부회계관리실</em>
+                                                <address class="withs-item__txt">
+                                                    부산광역시 수영구 광남로 42, 국보빌딩 7층<br>
+                                                    Tel : 051-600-6902<br>
+                                                    Fax : 051-600-6930
+                                                </address>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="wrap-network-map">
+                            <div class="network-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- network content E -->
+
+            <!-- main E -->
+        </main>
+        <footer></footer>
+    </div>
+
+    <script src="/js/common/HeaderFooter.js"></script>
+    <script>
+        document.querySelector('#filterTitle').addEventListener('change',function(){
+            document.querySelector('#filterItems').style.height = this.checked?0:'224px';
+        });
+
+        function viewList(ele){
+            var titles = document.querySelectorAll('.withs-title');
+            var items = document.querySelectorAll('.withs-items');
+            var id = ele.id.charAt(0).toUpperCase() + ele.id.slice(1,ele.id.length);
+
+            for(var i=0;i<titles.length;i++){
+                titles[i].style.display = 'none';
+                items[i].style.display = 'none';
+            }
+
+            document.querySelector('#title'+id).style.display = 'block';
+            document.querySelector('#with'+id).style.display = 'block';
+        }
+
+    </script>
+    
+</body>
+</html>

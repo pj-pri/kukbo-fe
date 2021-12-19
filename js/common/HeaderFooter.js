@@ -27,6 +27,16 @@ fetch('../../header.html')
 				}
 			});
 		})();
+
+		// sub menu toggle S
+		document
+			.querySelector('#headerSubBtn')
+			.addEventListener('change', function () {
+				document.querySelector('header').className = this.checked
+					? 'open'
+					: '';
+			});
+		// sub menu toggle E
 	});
 // load header html E
 
