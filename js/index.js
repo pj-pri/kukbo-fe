@@ -63,7 +63,9 @@ var feature = {
 };
 
 // feature fixed js E
+
 // feature img change S
+
 var featureImgs = {
 	wrap: document.querySelector('.features__images'),
 	image1: document.querySelector('.features__image--order-1'),
@@ -74,7 +76,7 @@ var featureImgs = {
 };
 
 function featureImg() {
-	var top = findAbsoluteTop(featureImgs.wrap) / 5;
+	var top = findAbsoluteTop(featureImgs.wrap);
 	var viewHeight = window.innerHeight;
 	var windowPoint = window.scrollY;
 

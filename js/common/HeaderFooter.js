@@ -26,17 +26,47 @@ fetch('../../header.html')
 						.trim();
 				}
 			});
-		})();
 
-		// sub menu toggle S
+			// sub menu toggle S
+			document
+				.querySelector('#headerSubBtn')
+				.addEventListener('change', function () {
+					if (window.innerWidth > 1140) {
+						document.querySelector('header').className = this
+							.checked
+							? document.querySelector('header').className +
+							  ' open'
+							: document
+									.querySelector('header')
+									.className.replace('open', '')
+									.trim();
+					} else {
+						document.querySelector('#headerMobileNav').style =
+							'right:0;';
+					}
+				});
+			// sub menu toggle E
+
+			// mobile nav
+			document
+				.querySelector('#mobileNavClose')
+				.addEventListener('click', function () {
+					document.querySelector('#headerMobileNav').style =
+						'right:-100%;';
+				});
+		})();
+		// mobile language
 		document
-			.querySelector('#headerSubBtn')
+			.querySelector('#mobileLanguageButton')
 			.addEventListener('change', function () {
-				document.querySelector('header').className = this.checked
-					? 'open'
-					: '';
+				if (this.checked) {
+					document.querySelector('.mobile-language').style =
+						'height:120px;';
+				} else {
+					document.querySelector('.mobile-language').style =
+						'height:0px;';
+				}
 			});
-		// sub menu toggle E
 	});
 // load header html E
 
@@ -49,3 +79,5 @@ fetch('../../footer.html')
 		document.querySelector('footer').innerHTML = html;
 	});
 // load footer html E
+
+setTimeout(() => {}, 100);

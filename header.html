@@ -6,7 +6,7 @@
         <ul class="header__nav-list">
             <li>
                 <a class="header__nav-item" href="/company/ceo.html">COMPANY</a>
-                <ul class="header__sub-nav">
+                <ul class="header__sub-nav header__sub-nav--company">
                     <li><a href="/company/ceo.html">CEO</a></li>
                     <li><a href="/company/overview.html">회사개요 & 연혁</a></li>
                     <li><a href="/company/awards.html">수상 & 인증 현황</a></li>
@@ -16,7 +16,7 @@
             </li>
             <li>
                 <a class="header__nav-item" href="/business/logistics.html">BUSINESS</a>
-                <ul class="header__sub-nav">
+                <ul class="header__sub-nav header__sub-nav--business">
                     <li><a href="/business/logistics.html">물류</a></li>
                     <li><a href="/business/bio.html">바이오</a></li>
                     <li><a href="/business/golf.html">골프 웨어</a></li>
@@ -36,7 +36,7 @@
             </li>
             <li>
                 <a class="header__nav-item" href="/media/media.html">MEDIA</a>
-                <ul class="header__sub-nav">
+                <ul class="header__sub-nav header__sub-nav--media">
                     <li><a href="/media/media.html?page=media">새소식</a></li>
                     <li><a href="/media/media.html?page=promotion">홍보 영상</a></li>
                 </ul>
@@ -46,7 +46,7 @@
             </li>
             <li>
                 <a class="header__nav-item" href="">E-Biz</a>
-                <ul class="header__sub-nav">
+                <ul class="header__sub-nav header__sub-nav--e-biz">
                     <li><a href="">하불 정산</a></li>
                     <li><a href="">재고조회</a></li>
                     <li><a href="">수출입 컨테이너 조회</a></li>
@@ -54,12 +54,48 @@
             </li>
         </ul>
     </nav>
-    <div class="header__language">
-        <div class="language-wrap">
-            <div class="language-wrap__globe"></div>
-            <input type="checkbox" name="" id="headerSubBtn">
-            <label for="headerSubBtn" class="header-sub__button"></label>
+    <div class="header__side">
+        <div class="language">
+            <a href="" onclick="return false;" class="language__globe header__nav-item"></a>
+            <ul class="header__sub-nav header__sub-nav--lang">
+                <li><a href="">Korean</a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">Japan</a></li>
+                <li><a href="">Chiness</a></li>
+            </ul>
         </div>
+        <input style="display: none;" type="checkbox" name="" id="headerSubBtn">
+        <label for="headerSubBtn" class="header-sub__button"></label>
     </div>
 </div>
 <div class="sub-nav"></div>
+
+
+<!-- mobile nav S -->
+<div id="headerMobileNav" class="mobile-nav">
+    <button id="mobileNavClose" class="mobile-nav__close-button"></button>
+    <div class="mobile-language-wrap">
+        <div class="view-Language">
+            <input id="mobileLanguageButton" style="display: none;" type="checkbox" name="">
+            <label for="mobileLanguageButton">Korean</label>
+        </div>
+        <ul class="mobile-language">
+            <li class="mobile-language__item"><a href="">English</a></li>
+            <li class="mobile-language__item"><a href="">Japan</a></li>
+            <li class="mobile-language__item"><a href="">Chiness</a></li>
+        </ul>
+    </div>
+    <nav class="mobile-nav__list">
+        <ul>
+            <li class="mobile-nav__item"><a href="">COMPANY</a></li>
+            <li class="mobile-nav__item"><a href="">BUSINESS</a></li>
+            <li class="mobile-nav__item"><a href="">NETWORK</a></li>
+            <li class="mobile-nav__item"><a href="">RELATIONS</a></li>
+            <li class="mobile-nav__item"><a href="">PARTNERS</a></li>
+            <li class="mobile-nav__item"><a href="">홍보 자료실</a></li>
+            <li class="mobile-nav__item"><a href="">CONTACT</a></li>
+            <li class="mobile-nav__item"><a href="">E-Biz</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- mobile nav E -->

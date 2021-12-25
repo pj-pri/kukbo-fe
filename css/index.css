@@ -2,6 +2,7 @@
 @import url(./common.css);
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./header_res.css);
 
 html,
 body {
@@ -667,44 +668,103 @@ section {
 	letter-spacing: 0px;
 }
 .gyeongin {
-	top: 239px;
-	left: 155px;
+	top: 227px;
+	left: 174px;
 }
 .central {
 	top: 272px;
-	left: 161px;
+	left: 191px;
 }
 .southern {
-	top: 290px;
-	left: 257px;
+	top: 285px;
+	left: 284px;
 }
 .busan {
-	top: 314px;
-	left: 259px;
+	top: 305px;
+	left: 278px;
 }
 .fukuoka {
-	top: 456px;
-	left: 170px;
+	top: 448px;
+	left: 177px;
 }
 .hakata {
-	top: 440px;
-	left: 188px;
+	top: 429px;
+	left: 205px;
 }
 .hiroshima {
-	top: 266px;
+	top: 258px;
 	left: 515px;
 }
 .oita {
-	top: 337px;
-	left: 430px;
+	top: 326px;
+	left: 443px;
 }
 .osaka {
-	top: 165px;
-	left: 710px;
+	top: 154px;
+	left: 729px;
 }
 .tokyo {
-	left: 976px;
-	top: 42px;
+	left: 996px;
+	top: 31px;
+}
+
+.locaion-on {
+	position: absolute;
+	left: -17px;
+	top: 7px;
+	width: 10px;
+	height: 10px;
+	/* background: red; */
+}
+.locaion-on::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+	/* background: rgba(8, 74, 138, 0.3); */
+	background: rgba(195, 161, 72, 0.3);
+	border-radius: 100%;
+	animation: location-on-01 2s linear infinite;
+}
+.locaion-on::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+	/* background: rgba(8, 74, 138, 0.3); */
+	background: rgba(195, 161, 72, 0.3);
+	border-radius: 100%;
+	animation: location-on-02 2s linear infinite;
+}
+@keyframes location-on-01 {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes location-on-02 {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		padding: 1;
+	}
 }
 
 .express-table {

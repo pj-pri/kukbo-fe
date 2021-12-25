@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overview - company</title>
+        <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/res.css">
+    <link rel="stylesheet" href="/css/mobile/header.css">
+    <link rel="stylesheet" href="/css/mobile/footer.css">
+    <link rel="stylesheet" href="/css/mobile/company/overview.css">
+    <link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css">
+    <script src="/lib/swiper/swiper-bundle.min.js"></script>
+
+    <!-- slide styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        background-color: gray;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide__bg-image
+      {
+        position:absolute;
+        /* min-width: 100%;
+        height: 100%; */
+        z-index: -1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+        <header></header>
+        <main class="main">
+            <div class="banner">
+                <div class="banner-cover">
+                    <h1>회사개요</h1>
+                    <p>COMPANY</p>
+                </div>
+            </div>
+
+            <div class="inner-sub-nav">
+                <div class="page-group">
+                    <p>COMPANY</p>
+                </div>
+                <div class="page-list">
+                    <input type="checkbox" id="pageListOpen">
+                    <label for="pageListOpen">회사개요</label>
+                </div>
+            </div>
+            <div class="inner-banner"></div>
+            <div class="inner-description">
+                <p>
+                    국보는 1953년 12월에 창립하여 68년의 유구한 역사를 자랑하는 종합물류 상장 기업입니다. <br> <br>
+
+                    운송, 보관, 물류센터 등의 인프라 구축과 첨단통합 물류관리시스템을 구축하고 있으며, ISO9001/ISO14001의 
+                    인증을 통한 국제기준 물류서비스를 제공하고 있습니다. 신규사업으로 골프웨어, 바이오, 모빌리티 플랫폼 등의 
+                    사업을 진행하고 있습니다.
+                </p>
+            </div>
+
+            <dl class="briefs">
+                <div class="briefs__item">
+                    <dt>
+                        <img src="/images/company/icon_company.svg" alt="">
+                    </dt>
+                    <dt>사업(법인명)</dt>
+                    <dd>(주)국보</dd>
+                </div>
+                <div class="briefs__item">
+                    <dt>
+                        <img src="/images/company/icon_open.svg" alt="">
+                    </dt>
+                    <dt>설립일</dt>
+                    <dd>1953년 12월 28일</dd>
+                </div>
+                <div class="briefs__item">
+                    <dt>
+                        <img src="/images/company/icon_representative.svg" alt="">
+                    </dt>
+                    <dt>대표자</dt>
+                    <dd>하 현</dd>
+                </div>
+                <div class="briefs__item">
+                    <dt>
+                        <img src="/images/company/icon_graph.svg" alt="">
+                    </dt>
+                    <dt>주식 상장일</dt>
+                    <dd>1989년 12월 2일</dd>
+                </div>
+                <div class="briefs__item">
+                    <dt>
+                        <img src="/images/company/icon_location.svg" alt="">
+                    </dt>
+                    <dt>위치</dt>
+                    <dd>부산광역시 수영구 
+광남로 42 국보빌딩 8층</dd>
+                    <dd>서울시 강남구 
+학동로 322 영서빌딩 4층</dd>
+                </div>
+            </dl>
+
+        <!-- business S -->
+        <section class="business">
+            <h2 class="section-title">Our Business</h2>
+            <p class="section-description">물류와 신규사업의 조화로 최고의 성과를 이루어 냅니다.</p>
+
+            <div class="business-slides">
+                <div class="swiper business-swiper">
+                    <div class="swiper-wrapper">
+                        <div id="slideLogistics" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>국제 물류</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>물류</dt>
+                                <dd>해외 각국의 파트너와 전략적 제휴를 통하여 글로벌 네트워크를 구축하고, 고객 맞춤형 서비스와 다양한 해외 네트워크를 활용한 국제물류사업을 운영하고 있습니다.</dd>
+                                <a href="./">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideFreight" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>화물 운송</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>화물 운송</dt>
+                                <dd>67년 동안 획득한 노하우와 첨단 IT솔루션을 통해 고객 여러분의 귀중한 화물을 한치의 오차없이 신속하고 안전하게 운송될 수 
+있도록 최상의 서비스를 제공합니다</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideStorage" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>창고 & 보관</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>창고 & 보관</dt>
+                                <dd>최적화된 창고관리시스템을 기반으로 한 
+최신 물류센터를 구축하여  다양한 고객의 요구에 대응하여 최상의 물류 서비스를 
+제공하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideTerminal" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>터미널 & 항만</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>터미널 & 항만</dt>
+                                <dd>국내 외 화주와 선사를 고정고객으로 확보, 최첨단의 장비와 우수한 인력, 효율적인 
+장비조작을 통해 고객서비스를 제공하고 
+있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideBio" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>바이오</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>바이오</dt>
+                                <dd>경구용 코로나 치료제 등 바이오 혁신 기술에 집중하여 코로나19 팬데믹 종식의 ‘Game Changer’로서의 역할을 다하여 
+글로벌 바이오 기업으로 도약하겠습니다.
+</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideGolf" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>골프웨어</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>골프웨어</dt>
+                                <dd>독일 프리미엄 스포츠 패션 브랜드 BOGNER와 유니크한 스포츠 패션 
+헤리티지를 토대로 독창적이고 차별화된 
+프리미엄 골프 라이프 스타일을 
+추구하겠습니다.
+</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideMobility" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>모빌리티 플랫폼</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>모빌리티 플랫폼</dt>
+                                <dd>공유 모빌리티 경제 스타트업으로 효율적 
+동선 및 라이더배차 system을 구축하여 
+경제 규제 환경 속에서 최적의 라이드 쉐어링을 제공하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideQuarantine" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>KF 방역마스크</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>KF 방역마스크</dt>
+                                <dd>다양한 국내, 국제 인증을 획득하여 의약외품 마스크인 KF-94, 덴탈마스크 등 모든 
+영역의 KF방역마스크를 양산하여 공급하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideTown" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>2H TOWN</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>2H TOWN</dt>
+                                <dd>세계적 수상레저 명소 청평호반의 Hub에 
+위치한 프라이빗 GOLD(LUXURY) &BLUE(NATURE) 타운하우스를 
+운영하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-business-slide-button">
+                <button onclick="slidePrev()" class="business-slide-button">&lt;</button>
+                <button onclick="slideNext()" class="business-slide-button">	&gt;	</button>
+            </div>
+        </section>
+ 
+        </main>
+        <footer></footer>
+    </div>
+    <script src="/js/mobile/headerFooter.js"></script>
+    <script>
+var businessSwiper = new Swiper('.business-swiper',{
+	spaceBetween: 0,
+	centeredSlides: true,
+	autoplay: {
+		delay: 1000,
+		disableOnInteraction: false,
+	},
+	// on: {
+	// 	init: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = 'animation:autoProgress 10s';
+	// 	},
+	// 	slideChange: function () {
+	// 		const slidePageCount = document.querySelector('#slidePageCount');
+	// 		slidePageCount.innerText = this.activeIndex + 1 + ' / 4';
+	// 	},
+	// 	slideChangeTransitionStart: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = '';
+	// 	},
+	// 	slideChangeTransitionEnd: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = 'animation:autoProgress 10s';
+	// 	},
+	// },
+
+});
+// swiper init js E
+
+function openBusinessSlide(ele){
+    businessSwiper.autoplay.pause();
+    var slide =ele.querySelector('.swiper-business-cover'); 
+    slide.className 
+        += slide.className.indexOf('swiper-business-cover--active') === -1
+            ?' swiper-business-cover--active':'';
+};
+function slideNext(){
+    businessSwiper.slideNext();
+    businessSwiper.autoplay.run();
+
+    if(document.querySelector('.swiper-business-cover--active')){
+        document.querySelector('.swiper-business-cover--active').className 
+            = 'swiper-business-cover';
+    }
+}
+function slidePrev(){
+    businessSwiper.slidePrev();
+    businessSwiper.autoplay.run();
+    if(document.querySelector('.swiper-business-cover--active')){
+        document.querySelector('.swiper-business-cover--active').className 
+            = 'swiper-business-cover';
+    }
+}
+
+
+
+    </script>
+</body>
+</html>

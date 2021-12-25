@@ -35,6 +35,32 @@
 
 /* Mobile S */
 @media all and (max-width: 767px) {
+	:root {
+		--font-size-h2: 24px;
+		--font-size-h3: 18px;
+		--font-size-h4: 18px;
+		--font-size-h5: 18px;
+		--font-size-h6: 18px;
+		--font-size-body1: 14px;
+		--font-size-body2: 12px;
+
+		--font-lh-h2: 36px;
+		--font-lh-h3: 28px;
+		--font-lh-h4: 28px;
+		--font-lh-h5: 24px;
+		--font-lh-h6: 23px;
+		--font-lh-body1: 23px;
+		--font-lh-body2: 19px;
+
+		--font-ls-h2: 0.5px;
+		--font-ls-h3: 0.2px;
+		--font-ls-h4: 0.5px;
+		--font-ls-h5: 0.5px;
+		--font-ls-h6: 0.5px;
+		--font-ls-body1: 0.2px;
+		--font-ls-body2: 0.2px;
+	}
+
 	.mobile-view {
 		display: none;
 	}

@@ -39,6 +39,9 @@ button {
 :root {
 	/* color S */
 
+	--primary: #014783;
+	--secondary: #475c71;
+	--tertiary: #15304b;
 	--pri-ip-blue: #0047bb;
 	--pri-darkness: #010440;
 	--pri-white: #ffffff;

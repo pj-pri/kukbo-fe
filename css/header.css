@@ -15,7 +15,6 @@ header {
 	grid-template-columns: 190px auto 70px;
 	-ms-grid-column: 190px auto 70px;
 	justify-content: space-between;
-	align-items: center;
 	height: 100%;
 }
 .header > * {
@@ -68,13 +67,27 @@ header {
 	text-align: center;
 }
 .header__sub-nav {
-	display: none;
 	position: absolute;
 	top: 100%;
-	left: 0;
-	width: 220px;
-	padding: 16px 11px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	height: 0;
+	padding: 0;
 	background: rgba(255, 255, 255, 0.8);
+	padding-left: 11px;
+	padding-right: 11px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.header__sub-nav--lang {
+	left: -25px;
+	transform: translateX(0);
+}
+
+.header__sub-nav li {
+	width: 100%;
+	height: auto;
 }
 .header__sub-nav a {
 	display: block;
@@ -82,42 +95,72 @@ header {
 	margin-bottom: 10px;
 
 	color: #1e1e1e;
-	/* font-family: Noto Sans KR; */
-	font-size: 14px;
-	/* font-style: normal; */
+	font-size: var(--font-size-body2);
 	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: -0.3px;
-	/* text-align: left; */
+	line-height: var(--font-lh-body2);
+	letter-spacing: var(--font-ls-body2);
+	text-align: center;
 }
 .header__sub-nav li:nth-last-child(1) a {
 	margin-bottom: 0;
 }
 
+/* header nav hover  */
 .header__nav-item:hover {
 	border-bottom: 2px solid #fff;
 }
-.header__nav-item:hover + .header__sub-nav {
-	display: block;
-}
+.header__nav-item:hover + .header__sub-nav,
 .header__sub-nav:hover {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.header__nav-item:hover + .header__sub-nav--company,
+.header__sub-nav--company:hover {
+	height: 240px;
+}
+.header__nav-item:hover + .header__sub-nav--business,
+.header__sub-nav--business:hover {
+	height: 250px;
+}
+.header__nav-item:hover + .header__sub-nav--media,
+.header__sub-nav--media:hover {
+	height: 90px;
+}
+.header__nav-item:hover + .header__sub-nav--e-biz,
+.header__sub-nav--e-biz:hover {
+	height: 150px;
+}
+.header__nav-item:hover + .header__sub-nav--lang,
+.header__sub-nav--lang:hover {
+	height: 150px;
+}
+.header__nav-item:hover + .header__sub-nav:hover {
 	display: block;
 }
-.language-wrap {
+/* header nav hover  */
+
+.header__side {
+	position: relative;
 	display: flex;
-	display: flexbox;
-	display: -ms-flexbox;
 	justify-content: space-between;
+	padding-top: 40px;
+}
+.language {
+	display: flex;
 	margin-bottom: -10px;
+	height: 100%;
 }
-.language-wrap input {
-	display: none;
-}
-.language-wrap__globe {
-	height: 20px;
+.language__globe {
+	position: relative;
+	display: block;
+	height: 100%;
 	width: 20px;
 	background-image: url(/images/common/icon_globe.svg);
 	background-size: 100% 100%;
+	background-position: 0 -15px;
+}
+.language__globe:hover {
+	bottom: -1px;
 }
 
 .header-sub__button {
@@ -126,10 +169,13 @@ header {
 	height: 20px;
 	background-image: url(/images/common/icon_hamberger.svg);
 	background-size: 100% 100%;
+	background-position: 0 5px;
 	cursor: pointer;
 }
 #headerSubBtn:checked + .header-sub__button {
+	transform: translateY(2px);
 	background-image: url(/images/common/icon_close.svg);
+	background-position-y: 2px;
 }
 
 /* header scrolled S */
@@ -146,35 +192,44 @@ header.scrolled {
 	width: 100%;
 	height: 0;
 	background: var(--pri-white);
-
-	display: grid;
-	grid-template-columns: 190px auto 70px;
-	-ms-grid-column: 190px auto 70px;
-	justify-content: space-between;
+	transition: 0.3s;
 }
 header.open .sub-nav {
 	height: 300px;
 }
 
 header.open .header__sub-nav {
-	left: 50%;
-	transform: translateX(-50%);
-	display: block;
-	padding: 0;
-	width: auto;
-	min-width: 100%;
-	text-align: center;
 	z-index: 9;
 }
 header.open .header__nav li {
 	width: 100%;
 	overflow: visible;
 }
-header.open .header__sub-nav a {
+/* header.open .header__sub-nav a {
 	word-break: keep-all;
 	word-wrap: nowrap;
+} */
+
+header.open .header__sub-nav {
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
-header.open .header__nav-item:hover {
+header.open .header__sub-nav--company {
+	height: 240px;
+}
+header.open .header__sub-nav--business {
+	height: 250px;
+}
+header.open .header__sub-nav--media {
+	height: 90px;
+}
+header.open .header__sub-nav--e-biz {
+	height: 150px;
+}
+header.open .header__sub-nav--lang {
+	height: 150px;
+}
+header.open header.open .header__nav-item:hover {
 	border-bottom: none;
 }
 header.open .header__nav-item:hover + .header__sub-nav {

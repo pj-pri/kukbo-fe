@@ -177,7 +177,7 @@ header {
 	width: 24px;
 	height: 10px;
 	transform: translateY(-50%) rotate(180deg);
-	transition: 0.3s;
+	transition: 0.5s;
 	background-image: url(/images/network/icon_arrow.svg);
 	/* transform: translateY(-50%); */
 }
@@ -186,7 +186,7 @@ header {
 }
 .filter-items {
 	height: 224px;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 .filter__item {
 	height: auto;

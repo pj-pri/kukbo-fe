@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>KUKBO</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/res.css">
+    <link rel="stylesheet" href="/css/mobile/header.css">
+    <link rel="stylesheet" href="/css/mobile/footer.css">
+    <link rel="stylesheet" href="/css/mobile/index.css">
+    <link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css">
+    <script src="/lib/swiper/swiper-bundle.min.js"></script>
+
+    <!-- slide styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: gray;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide__bg-image
+      {
+        position:absolute;
+        /* min-width: 100%;
+        height: 100%; */
+        z-index: -1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <header></header>
+        <div class="main-banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__bg-image" src="./images/index/banner_slide_01.jpg" alt="">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>물류</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 2</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 3</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <div class="banner-content-wrap">
+                                <p>Slide 4</p>
+                                <p>70년 역사를 이어온 글로벌 종합 물류 회사 국보가 미래를 책임지겠습니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-navi-bar">
+                    <div id="slidePageCount" class="page-count">
+                        1 / 1
+                    </div>
+                    <div class="slide-progress-bar">
+                        <div id="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section class="cards">
+            <div class="cards__top"></div>
+            <div class="cards__bottom">
+                <div class="cards__bottom-cover"></div>
+                <dl class="card__txt-wrap">
+                    <div class="card__txt">
+                        <dt>대고객 서비스 만족</dt>
+                        <dd>고객의 요구에 접근하여 귀 기울이며 비용과 효과 간의 현실적인 관계를 고려하여 고객에게 충분히 
+    이해토록 하며 최신의 물류 시스템으로 각 물류 
+    활동에 대한 고객의 평가를 측정, 평가, 현장에 반영</dd>
+                    </div>
+                    <div class="card__txt">
+                        <dt>최적의 물류프로세스 구축</dt>
+                        <dd>고객만족과 부가가치 물류의 목적을 위해 수배송, 
+    보관, 하역, 포장, 수출입 서비스 등 원활한 
+    물류관리를 위해 각 물류프로세스를 완비하여 
+    최적의 물류 시스템 구축</dd>
+                    </div>
+                    <div class="card__txt">
+                        <dt>녹색 및 품질경영</dt>
+                        <dd>ISO 9001, 14001 인증을 통해 물류시스템의 
+    개선 활동과 내외부적으로 발생할수있는 모든 비환경적 요소를 차단해 친환경 물류서비스의 품질 향상</dd>
+                    </div>
+                    <div class="card__txt">
+                        <dt>전략적 물류시스템 구축</dt>
+                        <dd>변화에 능동적이고 통합화된 조직 대응력을 키우며 
+    내/외부적 성과측정을 통하여 피드백과 대응 
+    메커니즘 창출</dd>
+                    </div>
+                    <div class="card__txt">
+                        <dt>창의적 사고와 지식경영</dt>
+                        <dd>상황을 파악하고 현상을 직시하여 개선요인을 탐구 및 새로운 문제해결 능력을 창출하며 적극적인 
+    사고와 참여하는 열린경영으로 전사적인 지식공유를 
+    통해 신기술 & 신지식 창출</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- business S -->
+        <section class="business section-padding">
+            <h2 class="section-title">Our Business</h2>
+            <p class="section-description">물류와 신규사업의 조화로 최고의 성과를 이루어 냅니다.</p>
+
+            <div class="business-slides">
+                <div class="swiper business-swiper">
+                    <div class="swiper-wrapper">
+                        <div id="slideLogistics" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>국제 물류</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>물류</dt>
+                                <dd>해외 각국의 파트너와 전략적 제휴를 통하여 글로벌 네트워크를 구축하고, 고객 맞춤형 서비스와 다양한 해외 네트워크를 활용한 국제물류사업을 운영하고 있습니다.</dd>
+                                <a href="./">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideFreight" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>화물 운송</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>화물 운송</dt>
+                                <dd>67년 동안 획득한 노하우와 첨단 IT솔루션을 통해 고객 여러분의 귀중한 화물을 한치의 오차없이 신속하고 안전하게 운송될 수 
+있도록 최상의 서비스를 제공합니다</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideStorage" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>창고 & 보관</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>창고 & 보관</dt>
+                                <dd>최적화된 창고관리시스템을 기반으로 한 
+최신 물류센터를 구축하여  다양한 고객의 요구에 대응하여 최상의 물류 서비스를 
+제공하고 있습니다.</dd>
+                            </dl>
+                        </div>
+
+                        <div id="slideTerminal" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>터미널 & 항만</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>터미널 & 항만</dt>
+                                <dd>국내 외 화주와 선사를 고정고객으로 확보, 최첨단의 장비와 우수한 인력, 효율적인 
+장비조작을 통해 고객서비스를 제공하고 
+있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideBio" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>바이오</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>바이오</dt>
+                                <dd>경구용 코로나 치료제 등 바이오 혁신 기술에 집중하여 코로나19 팬데믹 종식의 ‘Game Changer’로서의 역할을 다하여 
+글로벌 바이오 기업으로 도약하겠습니다.
+</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideGolf" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>골프웨어</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>골프웨어</dt>
+                                <dd>독일 프리미엄 스포츠 패션 브랜드 BOGNER와 유니크한 스포츠 패션 
+헤리티지를 토대로 독창적이고 차별화된 
+프리미엄 골프 라이프 스타일을 
+추구하겠습니다.
+</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideMobility" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>모빌리티 플랫폼</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>모빌리티 플랫폼</dt>
+                                <dd>공유 모빌리티 경제 스타트업으로 효율적 
+동선 및 라이더배차 system을 구축하여 
+경제 규제 환경 속에서 최적의 라이드 쉐어링을 제공하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideQuarantine" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>KF 방역마스크</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>KF 방역마스크</dt>
+                                <dd>다양한 국내, 국제 인증을 획득하여 의약외품 마스크인 KF-94, 덴탈마스크 등 모든 
+영역의 KF방역마스크를 양산하여 공급하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                        <div id="slideTown" onclick="openBusinessSlide(this)" class="swiper-slide swiper-slide-business">
+                            <div class="business-cover">
+                                <p>2H TOWN</p>
+                            </div>
+                            <dl class="swiper-business-cover">
+                                <dt>2H TOWN</dt>
+                                <dd>세계적 수상레저 명소 청평호반의 Hub에 
+위치한 프라이빗 GOLD(LUXURY) &BLUE(NATURE) 타운하우스를 
+운영하고 있습니다.</dd>
+                                <a href="">View More</a>
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-business-slide-button">
+                <button onclick="slidePrev()" class="business-slide-button">&lt;</button>
+                <button onclick="slideNext()" class="business-slide-button">	&gt;	</button>
+            </div>
+        </section>
+        <section class="vision">
+            <h2 class="section-title">Our Vision</h2>
+            <p class="section-description">모든 임직원과 고객의 중심은 화합입니다.</p>
+            <dl class="wrap-vision-cards">
+                <div class="vision-card">
+                    <dt><img class="vision-card__img" src="/images/mobile/business/vision_01.jpg" alt=""></dt>
+                    <dt class="vision-card__title"><em>새로운 발상</em>Creativity</dt>
+                    <dd class="vision-card__txt">지속적인 개선을 위하여 열린 <br>
+생각으로 새로운 발상을 시도합니다.</dd>
+                </div>
+
+                <div class="vision-card">
+                    <dt><img class="vision-card__img" src="/images/mobile/business/vision_02.jpg" alt=""></dt>
+                    <dt class="vision-card__title"><em>진취적인 행동</em>Progressiveness</dt>
+                    <dd class="vision-card__txt">의욕적이고, 최고를 지향하며, 적극적인 사고와 <br>
+진취적인 행동으로 맡은 업무를 완수합니다.</dd>
+                </div>
+
+                <div class="vision-card">
+                    <dt><img class="vision-card__img" src="/images/mobile/business/vision_03.jpg" alt=""></dt>
+                    <dt class="vision-card__title"><em>고객과의 조화</em>Harmony With Customers</dt>
+                    <dd class="vision-card__txt">서로를 존중하고, 부서간, 노사간의 이해를 넘어 <br> 모든 고객과의 조화를 추구합니다.</dd>
+                </div>
+
+            </dl>
+        </section>
+        <section class="network">
+            <h2>Network</h2>
+            <p>국내외 파트너와 원활한 협업을 기대합니다.</p>
+            <a href="">View More</a>
+        </section>
+
+        <footer></footer>
+   </div> 
+<script src="/js/mobile/headerFooter.js"></script>
+<script>
+// swiper init js S
+var swiper = new Swiper('.mySwiper', {
+	spaceBetween: 0,
+	centeredSlides: true,
+	// autoplay: {
+	// 	delay: 10000,
+	// 	disableOnInteraction: false,
+	// },
+	on: {
+		init: function () {
+			const progressbar = document.querySelector('#progressbar');
+			progressbar.style = 'animation:autoProgress 10s';
+		},
+		slideChange: function () {
+			const slidePageCount = document.querySelector('#slidePageCount');
+			slidePageCount.innerText = this.activeIndex + 1 + ' / 4';
+		},
+		slideChangeTransitionStart: function () {
+			const progressbar = document.querySelector('#progressbar');
+			progressbar.style = '';
+		},
+		slideChangeTransitionEnd: function () {
+			const progressbar = document.querySelector('#progressbar');
+			progressbar.style = 'animation:autoProgress 10s';
+		},
+	},
+});
+
+var businessSwiper = new Swiper('.business-swiper',{
+	spaceBetween: 0,
+	centeredSlides: true,
+	autoplay: {
+		delay: 1000,
+		disableOnInteraction: false,
+	},
+	// on: {
+	// 	init: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = 'animation:autoProgress 10s';
+	// 	},
+	// 	slideChange: function () {
+	// 		const slidePageCount = document.querySelector('#slidePageCount');
+	// 		slidePageCount.innerText = this.activeIndex + 1 + ' / 4';
+	// 	},
+	// 	slideChangeTransitionStart: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = '';
+	// 	},
+	// 	slideChangeTransitionEnd: function () {
+	// 		const progressbar = document.querySelector('#progressbar');
+	// 		progressbar.style = 'animation:autoProgress 10s';
+	// 	},
+	// },
+
+});
+// swiper init js E
+
+function openBusinessSlide(ele){
+    businessSwiper.autoplay.pause();
+    var slide =ele.querySelector('.swiper-business-cover'); 
+    slide.className 
+        += slide.className.indexOf('swiper-business-cover--active') === -1
+            ?' swiper-business-cover--active':'';
+};
+function slideNext(){
+    businessSwiper.slideNext();
+    businessSwiper.autoplay.run();
+
+    if(document.querySelector('.swiper-business-cover--active')){
+        document.querySelector('.swiper-business-cover--active').className 
+            = 'swiper-business-cover';
+    }
+}
+function slidePrev(){
+    businessSwiper.slidePrev();
+    businessSwiper.autoplay.run();
+    if(document.querySelector('.swiper-business-cover--active')){
+        document.querySelector('.swiper-business-cover--active').className 
+            = 'swiper-business-cover';
+    }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/res.css">
+    <link rel="stylesheet" href="/css/mobile/header.css">
+    <link rel="stylesheet" href="/css/mobile/footer.css">
+    <link rel="stylesheet" href="/css/mobile/business/bio.css">
+ 
+    <title>bio - business</title>
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/lib/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/header.css">
+    <script src="/js/mobile/headerFooter.js"></script>
+    <link rel="stylesheet" href="./css/footer.css"> -->
+
+    <!-- slide styles -->
+    <style>
+    .swiper {
+    width: 100%;
+    height: 100%;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        font-size:17px;
+    }
+
+
+    .swiper-slide {
+    position: relative;
+    font-size: 18px;
+    background-size: auto 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+    
+    .swiper-slide__bg-image
+    {
+    position:absolute;
+    /* min-width: 100%;
+    height: 100%; */
+    z-index: -1;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);
+    }
+    .swiper-slide .wrap-storage-img{
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 370px;
+        overflow: hidden;
+
+    }
+
+    .wrap-bio-img img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 106%;
+    }
+    .bio-swiper-pagination{
+        position: absolute;
+        bottom :0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        width: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bio-swiper-pagination button{
+        border: 1px solid var(--primary);
+        border-radius: 100%;
+        width: 10px;
+        height: 10px;
+    }
+    .bio-swiper-pagination button.page-active{
+        background: var(--primary);
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header></header>
+        <main class="main">
+            <div class="banner">
+                <div class="banner-cover">
+                    <h1>바이오</h1>
+                    <p>COMPANY</p>
+                </div>
+            </div>
+
+            <div class="inner-sub-nav">
+                <div class="page-group">
+                    <p>COMPANY</p>
+                </div>
+                <div class="page-list">
+                    <input type="checkbox" id="pageListOpen">
+                    <label for="pageListOpen">바이오</label>
+                </div>
+            </div>
+            <div class="inner-title">
+                <p>바이오</p>
+            </div>
+
+            <section class="bio-content">
+                <div class="content-inner-banner bio-banner"></div>
+                <h3 class="content-sub-title">
+                    레드힐 바이오파마(RedHill Biopharma)
+                </h3>
+                <p class="content-description">
+                    국보는 미국/이스라엘의 생명공학 기업 ‘레드힐 바이오파마(RedHill Biopharma)’의  지분을 취득하여 경구용 코로나19 치료제의 국내 유통과 아시아 유통까지 담당하는 판권계약의 우선협상권을 획득하였습니다.
+                </p>
+                <div class="redhill-logo">
+                    <img src="/images/business/bio/red_hill.jpg" alt="Red Hill Biopharma">
+                </div>
+                <h3 class="content-sub-title">
+                    제품
+                </h3>
+                <p class="content-description">
+                    국보가 판매 예정인 제품은 RHB-107(Upamostat), Opaganib, Talicia® 이렇게 3가지이며, 국보의 현지 전문성과 네트워크를 적극 활용하여 코로나19 팬데믹 종식의 큰 획이 되어 Healthcare 시장의 Game Changer가 될 것으로 예상하고 있습니다.
+                </p>
+                <div class="wrap-bio-slide">
+                    <div class="swiper bio-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--01">
+                                <div onclick="toggleCoverAppear(this)" class="bio-slide__cover bio-slide__cover--01">
+                                    <h3>TaliciaⓇ</h3>
+                                    <p>
+                                        성인의 위장에 있는 헬리코박터 파일로리균(Helicobacter pylori)의 치료를 위한 
+처방약으로 항생제아목시실린(amoxicillin), 리파부틴(rifabutin)과 프로톤펌프 억제제(PPI) 오메프라졸(omeprazole)로 구성된 
+고정용량, 경구용 복합제이며 탈리시아의 주성분중 하나인 리파부틴에 대한 내성이 발견되지 않은 유일한 리파부틴 기반 치료제입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide--02">
+                                <div onclick="toggleCoverAppear(this)" class="bio-slide__cover bio-slide__cover--02">
+                                    <h3>RHB-105(Opaganib)</h3>
+                                    <p>
+                                        여러 종양학, 염증 및GI지표를 대상으로 진행중인 항암, 항염증 활동을 포함한 경구 
+투여 스핑고 신키네이스-2(sphingosine kinase-2, SK2) 억제제로서 중요한 숙주 인자를 대상으로한 강력한 항바이러스 
+활동에 의한 바이러스 돌연 변이로 인한 
+내성발생 가능성을 최소화한 코로나19 
+경구용 중등/중증 치료제입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide--03">
+                                <div onclick="toggleCoverAppear(this)" class="bio-slide__cover bio-slide__cover--03">
+                                    <h3>RHB-107(Upamostat) </h3>
+                                    <p>
+                                        암, 염증성 폐질환, 과민성장 증후군, 염증성 
+장질환 및 췌장염 치료에 사용될 수 있는 S1 
+트립신 유사세린 프로테아제 계열의 잠재적인 1등급 경구 투여 억제제로서 코로나19 경구용 경증 치료제입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="bio-swiper-pagination">
+                        <button id="bioSlide01" onclick="bioSwiper.slideTo(0)" class="bullet page-active"></button>
+                        <button id="bioSlide02" onclick="bioSwiper.slideTo(1)" class="bullet"></button>
+                        <button id="bioSlide03" onclick="bioSwiper.slideTo(2)" class="bullet"></button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+ 
+    <script src="/js/mobile/headerFooter.js"></script>
+    <script  src="/lib/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var bioSwiper = new Swiper(".bio-slide", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+      });
+    bioSwiper.on('slideChangeTransitionEnd',function(){
+        document.querySelector('.page-active').className = document.querySelector('.page-active').className.replace('page-active').trim();
+        document.querySelector('#bioSlide0'+(bioSwiper.activeIndex+1)).className += ' page-active';
+    });
+
+    function toggleCoverAppear(ele){
+        
+        var viewParent = ele.parentNode;
+        if(viewParent.className.indexOf('page-view') === -1){
+            viewParent.className += ' page-view';
+            console.log('none : ',viewParent.className);
+        }else {
+            viewParent.className = viewParent.className.replace('page-view','').trim();
+        }
+
+    };
+
+    </script>   
+</body>
+</html>
